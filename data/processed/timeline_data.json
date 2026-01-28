@@ -1,0 +1,85 @@
+{
+  "timeline": [
+    {
+      "year": 2015,
+      "trials": 19,
+      "cumulative": 19
+    },
+    {
+      "year": 2016,
+      "trials": 21,
+      "cumulative": 40
+    },
+    {
+      "year": 2017,
+      "trials": 24,
+      "cumulative": 64
+    },
+    {
+      "year": 2018,
+      "trials": 63,
+      "cumulative": 127
+    },
+    {
+      "year": 2019,
+      "trials": 62,
+      "cumulative": 189
+    },
+    {
+      "year": 2020,
+      "trials": 59,
+      "cumulative": 248
+    },
+    {
+      "year": 2021,
+      "trials": 119,
+      "cumulative": 367
+    },
+    {
+      "year": 2022,
+      "trials": 76,
+      "cumulative": 443
+    },
+    {
+      "year": 2023,
+      "trials": 88,
+      "cumulative": 531
+    },
+    {
+      "year": 2024,
+      "trials": 100,
+      "cumulative": 631
+    },
+    {
+      "year": 2025,
+      "trials": 76,
+      "cumulative": 707
+    }
+  ],
+  "milestones": [
+    {
+      "year": 2016,
+      "title": "First Human Trial",
+      "description": "First CRISPR-Cas9 clinical trial in humans (China)",
+      "icon": "\ud83e\uddec"
+    },
+    {
+      "year": 2019,
+      "title": "CTX001 Success",
+      "description": "First sickle cell patient treated with success",
+      "icon": "\ud83e\ude78"
+    },
+    {
+      "year": 2020,
+      "title": "Nobel Prize",
+      "description": "Doudna & Charpentier win Chemistry Nobel",
+      "icon": "\ud83c\udfc6"
+    },
+    {
+      "year": 2023,
+      "title": "FDA Approval",
+      "description": "Casgevy approved for Sickle Cell Disease",
+      "icon": "\u2705"
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>global data dashboard</title>
+  <link rel="stylesheet" href="../css/pro.css">
+  <link rel="stylesheet" href="../css/pro_story.css">
+</head>
+
+<body>
+
+  <canvas id="globe-canvas"></canvas>
+  <!-- Cas9 network tooltip (single instance) -->
+  <div id="cas9-tooltip"></div>
+  <!-- Generic tooltip for bubble chart -->
+  <div id="tooltip"></div>
+  <!-- loading screen & scroll prompt -->
+  <!-- HOME Button (Top Left, Pro Theme) -->
+  <div id="nav-home" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+    <a href="../index.html" style="text-decoration: none;">
+      <button style="
+        background: rgba(0, 10, 20, 0.8); 
+        color: #2dfaff; 
+        border: 1px solid #2dfaff; 
+        padding: 8px 16px; 
+        font-family: 'Courier New', monospace; 
+        font-weight: bold; 
+        cursor: pointer; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;">
+        HOME
+      </button>
+    </a>
+  </div>
+
+  <!-- SWITCH Button (Top Right, Anti Theme) -->
+  <div id="nav-switch" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <a href="anti.html" style="text-decoration: none;">
+      <button style="
+        background: rgba(10, 0, 0, 0.8); 
+        color: #ff4d4d; 
+        border: 1px solid #ff4d4d; 
+        padding: 8px 16px; 
+        font-family: 'Courier New', monospace; 
+        font-weight: bold; 
+        cursor: pointer; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;">
+        SWITCH TO PERIL
+      </button>
+    </a>
+  </div>
+
+  <div id="loading-overlay">
+    <div id="loading-text">initializing global systems...</div>
+    <div id="progress-bar-container">
+      <div id="progress-fill"></div>
+    </div>
+    <div id="scroll-prompt">v scroll to explore v</div>
+  </div>
+
+  <div id="dashboard-grid">
+    <div id="focus-backdrop"></div>
+
+    <div class="widget" id="top-left-widget">
+      <h3>GLOBAL REGULATIONS</h3>
+      <div id="bar-chart-container"></div>
+    </div>
+
+    <div class="widget" id="top-center-widget">
+      <h3>STUDIES BY YEAR & SPECIES</h3>
+      <div class="bubble-chart-controls">
+        <label>Metric:
+          <select id="bubbleMetricSelect">
+            <option value="screenings">Number of Screenings</option>
+            <option value="genes">Number of Genes</option>
+            <option value="diseases">Number of Diseases</option>
+          </select>
+        </label>
+        <label class="view-toggle">
+          <input type="checkbox" id="bubbleViewToggle">
+          Combined View
+        </label>
+      </div>
+      <div id="bubble-chart-container"></div>
+    </div>
+
+    <div class="widget" id="top-right-widget">
+      <h3>📈 EXPONENTIAL HOPE</h3>
+      <p style="font-size: 12px; color: #2dfaff; margin: 10px 0;">From 19 studies to 119 peak in 2021 - 707 Trials
+        Shaping the Future</p>
+      <div id="timeline-chart-container"></div>
+    </div>
+
+    <div class="widget" id="bottom-left-widget">
+      <h3>🏆 PATH TO APPROVAL</h3>
+      <p style="font-size: 12px; color: #2dfaff; margin: 10px 0;">The rigorous journey from Phase 1 to FDA approval</p>
+      <div id="sankey-container"></div>
+    </div>
+
+    <div class="widget" id="bottom-right-widget">
+      <div id="bottom-right-header">
+        <h3>NEURAL LINK HUB</h3>
+        <button id="hub-readmore" class="read-more-btn">+ READ MORE</button>
+      </div>
+
+      <div id="cas9-network-shell">
+        <div id="cas9-network-header">
+          <div class="cas9-title">CAS9 INTERACTION NETWORK</div>
+          <div class="cas9-subtitle">
+            linking variants by shared technique, timing, and performance
+          </div>
+        </div>
+
+        <div id="network-controls">
+          <div class="success-control">
+            <span class="label">success threshold:</span>
+            <input id="successThreshold" type="range" min="0" max="100" value="0" />
+            <span id="successLabel">0%</span>
+          </div>
+
+          <div class="mode-buttons">
+            <button data-color-mode="precision" class="active">precision</button>
+            <button data-color-mode="technique">technique</button>
+            <button data-color-mode="cas9">cas9</button>
+          </div>
+
+          <label class="edges-toggle">
+            <input id="toggleEdges" type="checkbox" checked />
+            show edges
+          </label>
+        </div>
+
+        <div id="cas9-network-canvas">
+          <svg id="network-svg"></svg>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div id="steps-container">
+
+    <!-- ACT 0: OPENING HOOK (Pure Narrative) -->
+    <div class="step-trigger spacer">
+      <div class="story-card intro-card">
+        <h1>Every 13 seconds...</h1>
+        <p>A sickle cell patient experiences a pain crisis.</p>
+        <p class="highlight-text">Sharp. Unbearable. Unending.</p>
+        <br>
+        <p>Imagine 30 years of this.</p>
+        <p>Monthly blood transfusions. Unable to work. Unable to live.</p>
+        <p class="gold-text">Until 2019. When everything changed.</p>
+        <div class="question-box">
+          <p>This isn't science fiction. This is CRISPR.</p>
+          <p>And this is the story of how one discovery became a global revolution.</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll to begin ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 1: TIMELINE CHART ========== -->
+    <!-- Phase 1: Chart appears CENTER -->
+    <div class="step-trigger" data-widget="top-right-widget" data-phase="center"></div>
+
+    <!-- Phase 2: Chart moves LEFT -->
+    <div class="step-trigger" data-widget="top-right-widget" data-phase="left"></div>
+
+    <!-- Phase 3: Text appears RIGHT -->
+    <div class="step-trigger" data-widget="top-right-widget" data-phase="text">
+      <div class="story-card">
+        <h2>ACT 1: The Spark</h2>
+        <h3>From 1 to 707</h3>
+        <p>It began quietly in 2015. Just 19 studies. A handful of scientists. A radical idea.</p>
+        <div class="stats-box">
+          <p>Then something remarkable happened...</p>
+          <p>2016: 24 studies → 2018: 53 studies</p>
+          <div class="highlight-cyan">
+            <p>2021: 119 STUDIES IN A SINGLE YEAR</p>
+          </div>
+        </div>
+        <p>This is what a breakthrough looks like.</p>
+        <div class="question-box">
+          <p>🤔 What made the world embrace CRISPR so rapidly?</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll to continue ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 2: BUBBLE CHART ========== -->
+    <!-- Phase 1: Chart appears CENTER -->
+    <div class="step-trigger" data-widget="top-center-widget" data-phase="center"></div>
+
+    <!-- Phase 2: Chart moves LEFT -->
+    <div class="step-trigger" data-widget="top-center-widget" data-phase="left"></div>
+
+    <!-- Phase 3: Text appears RIGHT -->
+    <div class="step-trigger" data-widget="top-center-widget" data-phase="text">
+      <div class="story-card">
+        <h2>ACT 2: The Diversity of Hope</h2>
+        <h3>One Tool, Endless Possibilities</h3>
+        <p>CRISPR isn't just for one disease. It's not just for humans.</p>
+        <div class="stats-box">
+          <h4>📈 BY THE NUMBERS</h4>
+          <p>• 2,500+ Gene Targets</p>
+          <p>• 400+ Disease Conditions</p>
+          <p>• 1,200+ Screening Experiments</p>
+        </div>
+        <p>From cancer to genetic disorders. One technology. Infinite applications.</p>
+        <div class="question-box">
+          <p>🤔 Which countries are allowing this research?</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll to continue ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 3: BLOOM CHART ========== -->
+    <!-- Phase 1: Chart appears CENTER -->
+    <div class="step-trigger" data-widget="top-left-widget" data-phase="center"></div>
+
+    <!-- Phase 2: Chart moves LEFT -->
+    <div class="step-trigger" data-widget="top-left-widget" data-phase="left"></div>
+
+    <!-- Phase 3: Text appears RIGHT -->
+    <div class="step-trigger" data-widget="top-left-widget" data-phase="text">
+      <div class="story-card">
+        <h2>ACT 3: Opening Doors</h2>
+        <h3>The Freedom to Innovate</h3>
+        <p>Not all countries approach CRISPR the same way.</p>
+        <div class="stats-box">
+          <p>🇺🇸 United States - Score: 10.0</p>
+          <p>🇬🇧 United Kingdom - Score: 5.0</p>
+          <p>🇨🇳 China - Score: 7.5</p>
+        </div>
+        <p>These nations are saying YES to the future.</p>
+        <div class="question-box">
+          <p>🤔 But which approaches are actually working?</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll to continue ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 4: CAS9 NETWORK ========== -->
+    <!-- Phase 1: Chart appears CENTER -->
+    <div class="step-trigger" data-widget="bottom-right-widget" data-phase="center"></div>
+
+    <!-- Phase 2: Chart moves LEFT -->
+    <div class="step-trigger" data-widget="bottom-right-widget" data-phase="left"></div>
+
+    <!-- Phase 3: Text appears RIGHT -->
+    <div class="step-trigger" data-widget="bottom-right-widget" data-phase="text">
+      <div class="story-card">
+        <h2>ACT 4: The Science</h2>
+        <h3>The Neural Hub of Innovation</h3>
+        <p>This is the brain of CRISPR. Each dot is a Cas9 variant.</p>
+        <div class="stats-box">
+          <h4>🏆 TOP PERFORMERS</h4>
+          <p>1. SpCas9-HiFi: 92.3% success</p>
+          <p>2. SpCas9: 89.7% success</p>
+          <p>3. xCas9: 87.2% success</p>
+        </div>
+        <p>Connected variants share techniques. When one succeeds, others learn.</p>
+        <div class="question-box">
+          <p>🤔 How does CRISPR become a medicine?</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll to continue ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 5: SANKEY DIAGRAM ========== -->
+    <!-- Phase 1: Chart appears CENTER -->
+    <div class="step-trigger" data-widget="bottom-left-widget" data-phase="center"></div>
+
+    <!-- Phase 2: Chart moves LEFT -->
+    <div class="step-trigger" data-widget="bottom-left-widget" data-phase="left"></div>
+
+    <!-- Phase 3: Text appears RIGHT -->
+    <div class="step-trigger" data-widget="bottom-left-widget" data-phase="text">
+      <div class="story-card">
+        <h2>ACT 5: Path to Approval</h2>
+        <h3>The Journey to a Cure</h3>
+        <p>Getting FDA approval isn't luck. It's a gauntlet.</p>
+        <div class="stats-box highlight-gold-border">
+          <h4>⭐ CASGEVY: THE GOLDEN PATH</h4>
+          <p>Phase 1 (2018) → Phase 3 (2021) → FDA (2023)</p>
+        </div>
+        <div class="stats-box">
+          <p>Currently in Phase 3: <strong>87 trials</strong></p>
+          <p>These aren't "maybes." These are "coming soon."</p>
+        </div>
+        <div class="question-box">
+          <p>🤔 Where is this happening globally?</p>
+        </div>
+        <p class="scroll-instruction">↓ Scroll for the finale ↓</p>
+      </div>
+    </div>
+
+    <!-- ========== ACT 6: GLOBE (FINALE) ========== -->
+    <div class="step-trigger" data-widget="final-temporal-globe">
+      <div class="story-card centered-bottom glass-panel">
+        <h2>ACT 6: The Future is Now</h2>
+        <h3>A World Transformed</h3>
+        <p>707 studies. 50+ countries. Thousands of scientists.</p>
+        <p>This is humanity refusing to accept "incurable" as an answer.</p>
+        <div class="stats-box wide-box">
+          <h4>🌍 THE REVOLUTION</h4>
+          <p>707 Active Studies • 87 in Phase 3 • 1 Approved</p>
+        </div>
+        <p class="highlight-text big-text">Which disease will be cured next?</p>
+
+        <!-- Integrated Timeline Controls -->
+        <div class="timeline-controls-integrated">
+          <div class="timeline-title">🌍 GLOBAL CRISPR RESEARCH TIMELINE</div>
+
+          <div class="timeline-stats-row">
+            <span id="temporal-year-display-integrated" class="timeline-year">2015</span>
+            <span id="temporal-count-display-integrated" class="timeline-count">Studies: 0</span>
+          </div>
+
+          <div class="timeline-controls-row">
+            <button id="temporal-play-btn-integrated" class="timeline-play-btn">▶ PLAY</button>
+
+            <div class="timeline-slider-container">
+              <span class="timeline-label">2015</span>
+              <input type="range" id="temporal-year-slider-integrated" class="timeline-slider" min="2015" max="2028"
+                value="2015" step="1">
+              <span class="timeline-label">2028</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <a href="https://clinicaltrials.gov" target="_blank" class="action-btn">FIND A TRIAL</a>
+          <a href="anti.html" class="action-btn caution-btn">SEE THE CAUTION STORY →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Neural Link Hub Read-More Modal -->
+  <div id="hub-modal">
+    <div class="hub-modal-panel">
+      <button id="hub-modal-close" class="hub-modal-close">&times;</button>
+
+      <p class="hub-modal-kicker">Neural Link Hub</p>
+      <h2 class="hub-modal-title">CAS9 Interaction Network</h2>
+
+      <p class="hub-modal-body">
+        This view turns each Cas9 variant into a node and links variants that
+        share experimental context. Node size reflects a success metric
+        (higher is better), and the color mode lets you re-encode the network
+        by precision, technique, or Cas9 family.
+      </p>
+
+      <ul class="hub-modal-list">
+        <li><strong>Precision mode</strong>: colors by relative on-target specificity.</li>
+        <li><strong>Technique mode</strong>: groups nodes by delivery / assay type.</li>
+        <li><strong>Cas9 mode</strong>: highlights relationships across Cas9 families.</li>
+        <li><strong>Success slider</strong>: fades variants below the selected threshold.</li>
+      </ul>
+
+      <p class="hub-modal-footnote">
+        Data source: aggregated Cas9 editing experiments, normalized to a
+        common success / precision scale for visualization.
+      </p>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+
+  <!-- Load the Bloom Chart Logic -->
+  <script src="../js/pro/bloom_chart.js"></script>
+
+  <!-- Load Study Points Visualization Logic -->
+  <script src="../js/pro/plot_studies.js"></script>
+
+  <!-- Load Country Borders Visualization Logic -->
+  <script src="../js/pro/plot_countries.js"></script>
+
+  <!-- Load Main App Logic -->
+  <script src="../js/pro/main.js"></script>
+
+  <!-- Load Network Logic -->
+  <script src="../js/pro/network.js"></script>
+
+  <!-- Load Bubble Chart Logic -->
+  <script src="../js/pro/bubble_chart.js"></script>
+
+  <!-- Load NEW Timeline Chart Logic -->
+  <script src="../js/pro/timeline_chart.js"></script>
+
+  <!-- Load NEW Sankey Diagram Logic -->
+  <script src="../js/pro/sankey_diagram.js"></script>
+
+  <!-- Load Temporal Globe Controls (3D globe timeline) -->
+  <script src="../js/pro/temporal_globe_controls.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const openBtn = document.getElementById("hub-readmore");
+      const modal = document.getElementById("hub-modal");
+      const closeBtn = document.getElementById("hub-modal-close");
+
+      if (!openBtn || !modal || !closeBtn) return;
+
+      openBtn.addEventListener("click", () => {
+        modal.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      // close when clicking on dark backdrop
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+
+      // optional: Esc key closes modal
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") modal.classList.remove("active");
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>

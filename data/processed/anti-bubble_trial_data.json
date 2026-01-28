@@ -1,0 +1,659 @@
+{
+  "trials": [
+    {
+      "id": "NCT03057912",
+      "enrollment": 60,
+      "phase": "Phase 1",
+      "condition": "Human Papillomavirus-Related Malignant Neoplasm",
+      "status": "UNKNOWN",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06783270",
+      "enrollment": 10,
+      "phase": "Phase 1",
+      "condition": "Melanoma Metastatic",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04074369",
+      "enrollment": 800,
+      "phase": "N/A",
+      "condition": "Tuberculosis",
+      "status": "UNKNOWN",
+      "year": 2019.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06208878",
+      "enrollment": 70,
+      "phase": "N/A",
+      "condition": "Hematologic Malignancy",
+      "status": "ENROLLING_BY_INVITATION",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT07053488",
+      "enrollment": 90,
+      "phase": "Phase 2",
+      "condition": "Liver Diseases",
+      "status": "RECRUITING",
+      "year": 2025.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04178382",
+      "enrollment": 146,
+      "phase": "N/A",
+      "condition": "Severe Sepsis",
+      "status": "UNKNOWN",
+      "year": 2019.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03167450",
+      "enrollment": 109,
+      "phase": "N/A",
+      "condition": "Sickle Cell Disease",
+      "status": "COMPLETED",
+      "year": 2017.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT07053462",
+      "enrollment": 90,
+      "phase": "Phase 2",
+      "condition": "End-Stage Renal Disease",
+      "status": "RECRUITING",
+      "year": 2025.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06506461",
+      "enrollment": 25,
+      "phase": "Phase 1",
+      "condition": "Sickle Cell Disease",
+      "status": "RECRUITING",
+      "year": 2025.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03164135",
+      "enrollment": 5,
+      "phase": "N/A",
+      "condition": "HIV-1-infection",
+      "status": "UNKNOWN",
+      "year": 2017.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06465537",
+      "enrollment": 9,
+      "phase": "N/A",
+      "condition": "Primary Open Angle Glaucoma",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05850871",
+      "enrollment": 427,
+      "phase": "N/A",
+      "condition": "Carbapenem-Resistant Enterobacteriaceae Infection",
+      "status": "UNKNOWN",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03545815",
+      "enrollment": 10,
+      "phase": "Phase 1",
+      "condition": "Solid Tumor",
+      "status": "UNKNOWN",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04560790",
+      "enrollment": 3,
+      "phase": "N/A",
+      "condition": "Viral Keratitis",
+      "status": "COMPLETED",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03399448",
+      "enrollment": 3,
+      "phase": "Phase 1",
+      "condition": "Multiple Myeloma",
+      "status": "TERMINATED",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05566223",
+      "enrollment": 70,
+      "phase": "Phase 2",
+      "condition": "Carcinoma",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06041620",
+      "enrollment": 2,
+      "phase": "N/A",
+      "condition": "Thalassemia",
+      "status": "RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04925206",
+      "enrollment": 8,
+      "phase": "Phase 1",
+      "condition": "Transfusion Dependent Beta-Thalassaemia",
+      "status": "TERMINATED",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06287099",
+      "enrollment": 5,
+      "phase": "N/A",
+      "condition": "Sickle Cell Disease",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04426669",
+      "enrollment": 20,
+      "phase": "Phase 2",
+      "condition": "Gastrointestinal Epithelial Cancer",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04990557",
+      "enrollment": 16,
+      "phase": "Phase 2",
+      "condition": "COVID-19 Respiratory Infection",
+      "status": "UNKNOWN",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06300723",
+      "enrollment": 3,
+      "phase": "N/A",
+      "condition": "Sickle Cell Disease",
+      "status": "ENROLLING_BY_INVITATION",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03855631",
+      "enrollment": 8,
+      "phase": "N/A",
+      "condition": "Kabuki Syndrome 1",
+      "status": "COMPLETED",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06594094",
+      "enrollment": 6,
+      "phase": "N/A",
+      "condition": "Duchenne Muscular Dystrophin (DMD)",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06287086",
+      "enrollment": 1,
+      "phase": "N/A",
+      "condition": "Sickle Cell Disease",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06623279",
+      "enrollment": 15,
+      "phase": "Phase 1",
+      "condition": "Neovascular Age-Related Macular Degeneration (n...",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2025.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05740761",
+      "enrollment": 40,
+      "phase": "N/A",
+      "condition": "Rett Syndrome",
+      "status": "RECRUITING",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03728322",
+      "enrollment": 12,
+      "phase": "Phase 1",
+      "condition": "Thalassemia",
+      "status": "UNKNOWN",
+      "year": 2019.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06031727",
+      "enrollment": 12,
+      "phase": "Phase 1",
+      "condition": "Neovascular Age-related Macular Degeneration(nAMD)",
+      "status": "RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03655678",
+      "enrollment": 59,
+      "phase": "Phase 3",
+      "condition": "Beta-Thalassemia",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03342547",
+      "enrollment": 20,
+      "phase": "N/A",
+      "condition": "Gastrointestinal Infection",
+      "status": "UNKNOWN",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05356195",
+      "enrollment": 15,
+      "phase": "Phase 3",
+      "condition": "Beta-Thalassemia",
+      "status": "RECRUITING",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05477563",
+      "enrollment": 26,
+      "phase": "Phase 3",
+      "condition": "Beta-Thalassemia",
+      "status": "RECRUITING",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06615206",
+      "enrollment": 6,
+      "phase": "N/A",
+      "condition": "MECP2 Duplication Syndrome",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04037566",
+      "enrollment": 40,
+      "phase": "Phase 1",
+      "condition": "Leukemia Lymphocytic Acute (ALL) in Relapse",
+      "status": "UNKNOWN",
+      "year": 2019.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05329649",
+      "enrollment": 15,
+      "phase": "Phase 3",
+      "condition": "Sickle Cell Disease",
+      "status": "RECRUITING",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT07170254",
+      "enrollment": 12,
+      "phase": "N/A",
+      "condition": "High-grade Squamous Intraepithelial Lesions (HSIL)",
+      "status": "RECRUITING",
+      "year": 2025.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04637763",
+      "enrollment": 72,
+      "phase": "Phase 1",
+      "condition": "Lymphoma",
+      "status": "RECRUITING",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04557436",
+      "enrollment": 9,
+      "phase": "Phase 1",
+      "condition": "B Acute Lymphoblastic Leukemia",
+      "status": "COMPLETED",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03745287",
+      "enrollment": 63,
+      "phase": "Phase 3",
+      "condition": "Sickle Cell Disease",
+      "status": "COMPLETED",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06167590",
+      "enrollment": 20,
+      "phase": "N/A",
+      "condition": "Depression",
+      "status": "UNKNOWN",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04774536",
+      "enrollment": 9,
+      "phase": "Phase 2",
+      "condition": "Sickle Cell Disease",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03166878",
+      "enrollment": 80,
+      "phase": "Phase 2",
+      "condition": "B Cell Leukemia",
+      "status": "UNKNOWN",
+      "year": 2017.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05577312",
+      "enrollment": 9,
+      "phase": "Phase 1",
+      "condition": "Beta-Thalassemia",
+      "status": "ENROLLING_BY_INVITATION",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06128044",
+      "enrollment": 12,
+      "phase": "Phase 1",
+      "condition": "Acute Myeloid Leukemia",
+      "status": "TERMINATED",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05034978",
+      "enrollment": 150,
+      "phase": "N/A",
+      "condition": "SARS-CoV2 Infection",
+      "status": "TERMINATED",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05722418",
+      "enrollment": 50,
+      "phase": "Phase 1",
+      "condition": "Relapsed/Refractory Multiple Myeloma",
+      "status": "RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05443607",
+      "enrollment": 300,
+      "phase": "N/A",
+      "condition": "SARS CoV 2 Infection",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06611436",
+      "enrollment": 24,
+      "phase": "Phase 2",
+      "condition": "Hemophilia B",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06113861",
+      "enrollment": 1220,
+      "phase": "N/A",
+      "condition": "Tuberculosis",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04976218",
+      "enrollment": 30,
+      "phase": "Phase 1",
+      "condition": "Solid Tumor",
+      "status": "UNKNOWN",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05662904",
+      "enrollment": 12,
+      "phase": "Phase 1",
+      "condition": "Relapsed/Refractory Acute Myeloid Leukemia (AML)",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2028.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06582537",
+      "enrollment": 7,
+      "phase": "N/A",
+      "condition": "MDC1A",
+      "status": "COMPLETED",
+      "year": 2020.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05601557",
+      "enrollment": 480,
+      "phase": "N/A",
+      "condition": "Diagnosis ， Treatment， Genetic and Metabolic Li...",
+      "status": "UNKNOWN",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05397184",
+      "enrollment": 10,
+      "phase": "Phase 1",
+      "condition": "Relapsed/Refractory T-cell Acute Lymphoid Leuka...",
+      "status": "UNKNOWN",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05805007",
+      "enrollment": 9,
+      "phase": "Phase 1",
+      "condition": "Retinitis Pigmentosa",
+      "status": "RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05631912",
+      "enrollment": 38,
+      "phase": "Phase 2",
+      "condition": "Non-hodgkin Lymphoma",
+      "status": "RECRUITING",
+      "year": 2023.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT06321289",
+      "enrollment": 30,
+      "phase": "Phase 2",
+      "condition": "Non-hodgkin Lymphoma",
+      "status": "RECRUITING",
+      "year": 2024.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT05554939",
+      "enrollment": 30,
+      "phase": "Phase 2",
+      "condition": "Non Hodgkin's Lymphoma",
+      "status": "RECRUITING",
+      "year": 2022.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT07018804",
+      "enrollment": 5,
+      "phase": "N/A",
+      "condition": "Bronchiolitis Obliterans Syndrome (BOS)",
+      "status": "ENROLLING_BY_INVITATION",
+      "year": 2026.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT07170735",
+      "enrollment": 30,
+      "phase": "N/A",
+      "condition": "Tuberculosis",
+      "status": "NOT_YET_RECRUITING",
+      "year": 2026.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT04767308",
+      "enrollment": 18,
+      "phase": "Phase 1",
+      "condition": "CD5+ Relapsed/Refractory Hematopoietic Malignan...",
+      "status": "UNKNOWN",
+      "year": 2021.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03681951",
+      "enrollment": 8,
+      "phase": "Phase 2",
+      "condition": "Neoplasms",
+      "status": "TERMINATED",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "NCT03606486",
+      "enrollment": 52,
+      "phase": "N/A",
+      "condition": "High Grade Ovarian Serous Adenocarcinoma",
+      "status": "TERMINATED",
+      "year": 2018.0,
+      "source": "CTG"
+    },
+    {
+      "id": "2024-514641-12-00",
+      "enrollment": 6,
+      "phase": "Phase 3",
+      "condition": "Transfusion-dependent β-thalassemia (TDT)",
+      "status": "Ongoing, recruiting",
+      "year": 2022.0,
+      "source": "CTIS"
+    },
+    {
+      "id": "2023-507260-40-00",
+      "enrollment": 22,
+      "phase": "Phase 2",
+      "condition": "Hemophilia B",
+      "status": "Ongoing, recruiting",
+      "year": 2025.0,
+      "source": "CTIS"
+    },
+    {
+      "id": "2024-512479-11-00",
+      "enrollment": 1,
+      "phase": "Phase 2",
+      "condition": "Solid Malignancy",
+      "status": "Ongoing, recruiting",
+      "year": 2024.0,
+      "source": "CTIS"
+    },
+    {
+      "id": "2023-510417-25-00",
+      "enrollment": 10,
+      "phase": "Phase 1",
+      "condition": "Advanced or metastatic melanoma",
+      "status": "Not authorised",
+      "year": null,
+      "source": "CTIS"
+    },
+    {
+      "id": "2024-516067-83-00",
+      "enrollment": 9,
+      "phase": "Phase 2",
+      "condition": "Severe sickle cell disease (SCD)",
+      "status": "Ended",
+      "year": 2019.0,
+      "source": "CTIS"
+    },
+    {
+      "id": "2024-516894-57-00",
+      "enrollment": 5,
+      "phase": "Phase 3",
+      "condition": "Transfusion-dependent β-thalassemia (TDT)",
+      "status": "Ended",
+      "year": 2018.0,
+      "source": "CTIS"
+    },
+    {
+      "id": "2024-512654-19-00",
+      "enrollment": 37,
+      "phase": "Phase 3",
+      "condition": "Sickle Cell Disease",
+      "status": "Ongoing, recruiting",
+      "year": 2020.0,
+      "source": "CTIS"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "median": 16,
+    "under50": 53,
+    "under50Percent": 74.6,
+    "totalPatients": 5135,
+    "meanEnrollment": 72,
+    "maxEnrollment": 1220,
+    "minEnrollment": 1,
+    "phaseDistribution": {
+      "Phase 1": 21,
+      "N/A": 27,
+      "Phase 2": 15,
+      "Phase 3": 8
+    }
+  }
+}

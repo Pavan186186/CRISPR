@@ -1,0 +1,26 @@
+World Data Analysis
+===================
+
+Analyzing file: world-110m.json
+------------------------------
+JSON Type: <class 'dict'>
+Keys: ['type', 'objects', 'arcs', 'bbox', 'transform']
+
+Key: type
+Type: <class 'str'>
+
+Key: objects
+Type: <class 'dict'>
+Sub-keys: ['countries', 'land']
+
+Key: arcs
+Type: <class 'list'>
+List length: 595
+
+Key: bbox
+Type: <class 'list'>
+List length: 4
+
+Key: transform
+Type: <class 'dict'>
+Sub-keys: ['scale', 'translate']

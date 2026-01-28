@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "axis": "Small Insertions/Deletions",
+      "value": 85,
+      "description": "Most common outcome; result of error-prone DNA repair."
+    },
+    {
+      "axis": "DNA Break Toxicity",
+      "value": 80,
+      "description": "CRISPR-induced double-strand breaks often trigger apoptosis."
+    },
+    {
+      "axis": "Large Deletions",
+      "value": 70,
+      "description": "Deletions spanning kilobase to megabase scale."
+    },
+    {
+      "axis": "Retrotransposition",
+      "value": 65,
+      "description": "Mobile genetic elements inserting at cut sites (5-6% rate)."
+    },
+    {
+      "axis": "Copy Number Changes",
+      "value": 60,
+      "description": "Alterations in the number of copies of specific DNA sections."
+    },
+    {
+      "axis": "Chromosomal Translocations",
+      "value": 50,
+      "description": "Rare but extremely dangerous; potential cancer cause."
+    }
+  ]
+]

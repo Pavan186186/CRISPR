@@ -1,0 +1,74 @@
+{
+  "price": 2200000,
+  "currency": "USD",
+  "comparisons": [
+    {
+      "id": "salary",
+      "label": "44 Years of Avg US Salary",
+      "value": 44,
+      "unit": "years",
+      "base_value": 50000,
+      "context": "Based on average US annual income of ~$50k. A lifetime of work."
+    },
+    {
+      "id": "house",
+      "label": "A House in Most US Cities",
+      "value": 1,
+      "unit": "house",
+      "base_value": 400000,
+      "context": "Median home price in the US is ~$400k. You could buy 5 houses."
+    },
+    {
+      "id": "harvard",
+      "label": "4 Years at Harvard",
+      "value": 4,
+      "unit": "degrees",
+      "base_value": 320000,
+      "context": "Tuition + living ~ $80k/year. Education for a family."
+    },
+    {
+      "id": "insulin",
+      "label": "100+ Years of Insulin",
+      "value": 100,
+      "unit": "years",
+      "base_value": 12000, 
+      "context": "At approx $1000/month. A lifetime supply for multiple people."
+    },
+    {
+      "id": "treatment",
+      "label": "Lifetime of Sickle Cell Care",
+      "value": 1,
+      "unit": "lifetime",
+      "base_value": 1700000,
+      "context": "Conventional treatment costs ~$1.7M over a lifetime. One shot costs more."
+    },
+    {
+        "id": "rent",
+        "label": "1,466 Months of Rent",
+        "value": 1466,
+        "unit": "months",
+        "base_value": 1500,
+        "context": "At $1,500/month, that's over 122 years of rent."
+    }
+  ],
+  "regional_distribution": [
+    {
+      "region": "Sub-Saharan Africa",
+      "percentage": 75,
+      "color": "#e63946",
+      "access": "No Access"
+    },
+    {
+      "region": "India / Middle East",
+      "percentage": 20,
+      "color": "#f4a261",
+      "access": "Limited Access"
+    },
+    {
+      "region": "US / Europe",
+      "percentage": 5,
+      "color": "#2a9d8f",
+      "access": "Full Access"
+    }
+  ]
+}

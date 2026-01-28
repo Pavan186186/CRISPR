@@ -1,0 +1,50 @@
+CRISPR Regulations Data Analysis
+================================
+
+Analyzing file: crispr_gene_editing_regulations_combined.csv
+------------------------------
+Shape: (157, 6)
+
+Columns:
+  - Domain
+  - Category
+  - Country_Region
+  - Metric
+  - Value
+  - Notes
+
+Data Types:
+Domain             object
+Category           object
+Country_Region     object
+Metric             object
+Value             float64
+Notes              object
+
+Missing Values:
+Domain              0
+Category            0
+Country_Region      0
+Metric              0
+Value               0
+Notes             133
+
+Basic Statistics (Numeric):
+            Value
+count  157.000000
+mean     4.238854
+std      3.126390
+min      0.000000
+25%      1.000000
+50%      4.000000
+75%      7.500000
+max     10.000000
+
+First 5 rows:
+        Domain    Category Country_Region  Metric  Value           Notes
+0  Agriculture  Crops/Food      Australia  Rating   10.0    Field trials
+1  Agriculture  Crops/Food         Canada  Rating   10.0  Approved crops
+2  Agriculture  Crops/Food          Chile  Rating   10.0    Field trials
+3  Agriculture  Crops/Food     Costa Rica  Rating   10.0    Field trials
+4  Agriculture  Crops/Food         Israel  Rating   10.0    Field trials
+

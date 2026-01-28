@@ -1,0 +1,166 @@
+[
+  {
+    "country": "Africa",
+    "value": 5.0
+  },
+  {
+    "country": "Argentina",
+    "value": 10.0
+  },
+  {
+    "country": "Australia",
+    "value": 8.0
+  },
+  {
+    "country": "Bangladesh",
+    "value": 6.0
+  },
+  {
+    "country": "Bolivia",
+    "value": 2.0
+  },
+  {
+    "country": "Brazil",
+    "value": 10.0
+  },
+  {
+    "country": "Canada",
+    "value": 8.0
+  },
+  {
+    "country": "Central America",
+    "value": 6.0
+  },
+  {
+    "country": "Chile",
+    "value": 8.0
+  },
+  {
+    "country": "China",
+    "value": 8.0
+  },
+  {
+    "country": "Colombia",
+    "value": 6.0
+  },
+  {
+    "country": "Costa Rica",
+    "value": 8.0
+  },
+  {
+    "country": "Cuba",
+    "value": 4.0
+  },
+  {
+    "country": "Ecuador",
+    "value": 10.0
+  },
+  {
+    "country": "El Salvador",
+    "value": 4.0
+  },
+  {
+    "country": "European Union",
+    "value": 4.0
+  },
+  {
+    "country": "Ghana",
+    "value": 6.0
+  },
+  {
+    "country": "Guatemala",
+    "value": 4.0
+  },
+  {
+    "country": "Honduras",
+    "value": 6.0
+  },
+  {
+    "country": "India",
+    "value": 6.0
+  },
+  {
+    "country": "Indonesia",
+    "value": 6.0
+  },
+  {
+    "country": "Israel",
+    "value": 8.0
+  },
+  {
+    "country": "Japan",
+    "value": 8.0
+  },
+  {
+    "country": "Kenya",
+    "value": 6.0
+  },
+  {
+    "country": "Malawi",
+    "value": 6.0
+  },
+  {
+    "country": "Mexico",
+    "value": 8.0
+  },
+  {
+    "country": "New Zealand",
+    "value": 4.0
+  },
+  {
+    "country": "Nigeria",
+    "value": 6.0
+  },
+  {
+    "country": "Norway",
+    "value": 6.0
+  },
+  {
+    "country": "Pakistan",
+    "value": 6.0
+  },
+  {
+    "country": "Paraguay",
+    "value": 10.0
+  },
+  {
+    "country": "Peru",
+    "value": 2.0
+  },
+  {
+    "country": "Philippines",
+    "value": 8.0
+  },
+  {
+    "country": "Russia",
+    "value": 10.0
+  },
+  {
+    "country": "South Africa",
+    "value": 4.0
+  },
+  {
+    "country": "South Korea",
+    "value": 4.0
+  },
+  {
+    "country": "Switzerland",
+    "value": 5.0
+  },
+  {
+    "country": "Ukraine",
+    "value": 10.0
+  },
+  {
+    "country": "United Kingdom",
+    "value": 4.0
+  },
+  {
+    "country": "United States",
+    "value": 8.0
+  },
+  {
+    "country": "Uruguay",
+    "value": 6.0
+  }
+]

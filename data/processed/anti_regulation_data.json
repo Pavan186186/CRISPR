@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Restrictive",
+    "value": 2
+  },
+  {
+    "category": "Regulated",
+    "value": 23
+  },
+  {
+    "category": "Permissive",
+    "value": 16
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Unapproved Trials",
+    "value": 12,
+    "severity": "critical",
+    "details": "Rogue experiments conducting germline editing without oversight.",
+    "examples": "He Jiankui (2018), Independent Biohackers"
+  },
+  {
+    "category": "Consent Breaches",
+    "value": 28,
+    "severity": "high",
+    "details": "Patients coerced or not fully informed of long-term genetic risks.",
+    "examples": "Misleading consent forms, Language barriers"
+  },
+  {
+    "category": "Safety Failures",
+    "value": 15,
+    "severity": "high",
+    "details": "Severe off-target effects and unintended Mosaicism detected.",
+    "examples": "Chromosomal deletions, unanticipated immune response"
+  },
+  {
+    "category": "Data Privacy",
+    "value": 45,
+    "severity": "medium",
+    "details": "Genetic data sold to third parties without explicit user consent.",
+    "examples": "Insurance discrimination, unauthorized database sharing"
+  },
+  {
+    "category": "Equity Access",
+    "value": 32,
+    "severity": "medium",
+    "details": "Therapies restricted to wealthy nations/individuals, widening the gap.",
+    "examples": "Cost barriers ($2.2M), Patent monopolies"
+  }
+]

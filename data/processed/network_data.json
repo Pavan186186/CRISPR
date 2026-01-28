@@ -1,0 +1,882 @@
+{
+  "nodes": [
+    {
+      "id": "NmeCas9",
+      "label": "NmeCas9",
+      "medianScore": 27.0,
+      "technique": "Lipofectamine",
+      "time": "72h",
+      "success": 20.034288707744327,
+      "precision": 0.30027859575042265
+    },
+    {
+      "id": "SpCas9",
+      "label": "SpCas9",
+      "medianScore": 40.7,
+      "technique": "Incubation",
+      "time": "NULL",
+      "success": 20.051687052044226,
+      "precision": 0.3004199572978593
+    },
+    {
+      "id": "NmCas9",
+      "label": "NmCas9",
+      "medianScore": 22.0,
+      "technique": "Lipofectamine",
+      "time": "72h",
+      "success": 20.027938947050934,
+      "precision": 0.3002270039447888
+    },
+    {
+      "id": "SpCas9-NmCas9",
+      "label": "SpCas9-NmCas9",
+      "medianScore": 5.5,
+      "technique": "Lipofectamine",
+      "time": "72h",
+      "success": 20.006984736762732,
+      "precision": 0.3000567509861972
+    },
+    {
+      "id": "SaCas9",
+      "label": "SaCas9",
+      "medianScore": 12.0,
+      "technique": "Lipofectamine",
+      "time": "4d",
+      "success": 20.015239425664145,
+      "precision": 0.3001238203335212
+    },
+    {
+      "id": "SpCas9-SaCas9",
+      "label": "SpCas9-SaCas9",
+      "medianScore": 11.0,
+      "technique": "Lipofectamine",
+      "time": "72h",
+      "success": 20.013969473525467,
+      "precision": 0.3001135019723944
+    },
+    {
+      "id": "eSpCas9",
+      "label": "eSpCas9",
+      "medianScore": 25730.0,
+      "technique": "sgRNP Electroporation",
+      "time": "NULL",
+      "success": 52.675868528204845,
+      "precision": 0.5654914317916644
+    },
+    {
+      "id": "VP12Cas9",
+      "label": "VP12Cas9",
+      "medianScore": 30.0,
+      "technique": "sgRNP Electroporation",
+      "time": "NULL",
+      "success": 20.038098564160364,
+      "precision": 0.30030955083380295
+    },
+    {
+      "id": "Alt-R HiFi Cas9",
+      "label": "Alt-R HiFi Cas9",
+      "medianScore": 31.0,
+      "technique": "sgRNP Electroporation",
+      "time": "NULL",
+      "success": 20.039368516299042,
+      "precision": 0.3003198691949297
+    },
+    {
+      "id": "Nme2Cas9",
+      "label": "Nme2Cas9",
+      "medianScore": 8.0,
+      "technique": "Nucleofection",
+      "time": "5d",
+      "success": 20.01015961710943,
+      "precision": 0.3000825468890141
+    },
+    {
+      "id": "eNme2-C",
+      "label": "eNme2-C",
+      "medianScore": 7.0,
+      "technique": "Nucleofection",
+      "time": "5d",
+      "success": 20.008889664970752,
+      "precision": 0.30007222852788734
+    },
+    {
+      "id": "eNme2-C.NR",
+      "label": "eNme2-C.NR",
+      "medianScore": 20.0,
+      "technique": "Nucleofection",
+      "time": "5d",
+      "success": 20.025399042773575,
+      "precision": 0.3002063672225353
+    },
+    {
+      "id": "SpRY",
+      "label": "SpRY",
+      "medianScore": 35.0,
+      "technique": "Nucleofection",
+      "time": "5d",
+      "success": 20.044448324853757,
+      "precision": 0.30036114263943675
+    },
+    {
+      "id": "SpRY HF1",
+      "label": "SpRY HF1",
+      "medianScore": 36.0,
+      "technique": "Nucleofection",
+      "time": "5d",
+      "success": 20.045718276992435,
+      "precision": 0.30037146100056356
+    },
+    {
+      "id": "SpRY-Cas9",
+      "label": "SpRY-Cas9",
+      "medianScore": 11.0,
+      "technique": "sgRNP Electroporation",
+      "time": "24h",
+      "success": 20.013969473525467,
+      "precision": 0.3001135019723944
+    },
+    {
+      "id": "AsCpf1",
+      "label": "AsCpf1",
+      "medianScore": 8.01,
+      "technique": "Nucleofection",
+      "time": "8h",
+      "success": 20.01017231663082,
+      "precision": 0.30008265007262536
+    },
+    {
+      "id": "LbCas12a",
+      "label": "LbCas12a",
+      "medianScore": 75.0,
+      "technique": "Nucleofection",
+      "time": "72h",
+      "success": 20.095246410400907,
+      "precision": 0.30077387708450737
+    },
+    {
+      "id": "SpCas9-HF1",
+      "label": "SpCas9-HF1",
+      "medianScore": 630.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.800069847367627,
+      "precision": 0.306500567509862
+    },
+    {
+      "id": "eSpCas9(1.1)",
+      "label": "eSpCas9(1.1)",
+      "medianScore": 655.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.831818650834595,
+      "precision": 0.3067585265380311
+    },
+    {
+      "id": "HypaCas9",
+      "label": "HypaCas9",
+      "medianScore": 320.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.40638468437721,
+      "precision": 0.3033018755605648
+    },
+    {
+      "id": "ABE8e-SpyMac",
+      "label": "ABE8e-SpyMac",
+      "medianScore": 7.0,
+      "technique": "NULL",
+      "time": "NULL",
+      "success": 20.008889664970752,
+      "precision": 0.30007222852788734
+    },
+    {
+      "id": "PE2",
+      "label": "PE2",
+      "medianScore": 55.1,
+      "technique": "Incubation",
+      "time": "8h",
+      "success": 20.0699743628412,
+      "precision": 0.3005685416980847
+    },
+    {
+      "id": "ABE8.8",
+      "label": "ABE8.8",
+      "medianScore": 0.3005,
+      "technique": "NULL",
+      "time": "NULL",
+      "success": 20.000381620617674,
+      "precision": 0.30000310066751856
+    },
+    {
+      "id": "SpCas9n",
+      "label": "SpCas9n",
+      "medianScore": 0.09,
+      "technique": "sgRNP Electroporation",
+      "time": "10d",
+      "success": 20.00011429569248,
+      "precision": 0.3000009286525014
+    },
+    {
+      "id": "HiFi Cas9",
+      "label": "HiFi Cas9",
+      "medianScore": 5.0,
+      "technique": "Electroporation",
+      "time": "13h",
+      "success": 20.006349760693393,
+      "precision": 0.3000515918056338
+    },
+    {
+      "id": "LZ3 Cas9",
+      "label": "LZ3 Cas9",
+      "medianScore": 27.5,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.034923683813666,
+      "precision": 0.300283754930986
+    },
+    {
+      "id": "SniperCas9",
+      "label": "SniperCas9",
+      "medianScore": 10.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.01269952138679,
+      "precision": 0.30010318361126764
+    },
+    {
+      "id": "xCas9(3.7)",
+      "label": "xCas9(3.7)",
+      "medianScore": 15.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.019049282080182,
+      "precision": 0.30015477541690144
+    },
+    {
+      "id": "evoCas9",
+      "label": "evoCas9",
+      "medianScore": 260.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.33018755605648,
+      "precision": 0.3026827738929589
+    },
+    {
+      "id": "SpCas9(K855A)",
+      "label": "SpCas9(K855A)",
+      "medianScore": 0.0,
+      "technique": "Lipofectamine",
+      "time": "24h",
+      "success": 20.0,
+      "precision": 0.3
+    },
+    {
+      "id": "AsCpf1_S542R/K607R",
+      "label": "AsCpf1_S542R/K607R",
+      "medianScore": 0.26,
+      "technique": "Lipofectamine",
+      "time": "24h",
+      "success": 20.000330187556056,
+      "precision": 0.30000268277389297
+    },
+    {
+      "id": "AsCpf1_S542R/K548V/N552R",
+      "label": "AsCpf1_S542R/K548V/N552R",
+      "medianScore": 0.55,
+      "technique": "Lipofectamine",
+      "time": "24h",
+      "success": 20.000698473676273,
+      "precision": 0.3000056750986197
+    },
+    {
+      "id": "SpCas9-mSA",
+      "label": "SpCas9-mSA",
+      "medianScore": 144.0,
+      "technique": "HTVI",
+      "time": "7d",
+      "success": 20.182873107969744,
+      "precision": 0.30148584400225414
+    },
+    {
+      "id": "SpCas9-mSA*",
+      "label": "SpCas9-mSA*",
+      "medianScore": 36.0,
+      "technique": "HTVI",
+      "time": "7d",
+      "success": 20.045718276992435,
+      "precision": 0.30037146100056356
+    },
+    {
+      "id": "SpyCas9-mSA*",
+      "label": "SpyCas9-mSA*",
+      "medianScore": 11.0,
+      "technique": "Intratracheally",
+      "time": "3 in 4d",
+      "success": 20.013969473525467,
+      "precision": 0.3001135019723944
+    },
+    {
+      "id": "3xNLS SpyCas9",
+      "label": "3xNLS SpyCas9",
+      "medianScore": 3.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.003809856416037,
+      "precision": 0.3000309550833803
+    },
+    {
+      "id": "3xNLS enAspCas12a",
+      "label": "3xNLS enAspCas12a",
+      "medianScore": 4.0,
+      "technique": "Electroporation",
+      "time": "3d",
+      "success": 20.005079808554715,
+      "precision": 0.30004127344450704
+    },
+    {
+      "id": "PE4",
+      "label": "PE4",
+      "medianScore": 5.5,
+      "technique": "Lipofectamine",
+      "time": "2d",
+      "success": 20.006984736762732,
+      "precision": 0.3000567509861972
+    },
+    {
+      "id": "PE2-nuclease",
+      "label": "PE2-nuclease",
+      "medianScore": 5.0,
+      "technique": "Lipofectamine",
+      "time": "2d",
+      "success": 20.006349760693393,
+      "precision": 0.3000515918056338
+    },
+    {
+      "id": "PEmax-nuclease",
+      "label": "PEmax-nuclease",
+      "medianScore": 11.0,
+      "technique": "Lipofectamine",
+      "time": "2d",
+      "success": 20.013969473525467,
+      "precision": 0.3001135019723944
+    },
+    {
+      "id": "BE3",
+      "label": "BE3",
+      "medianScore": 1.1,
+      "technique": "Incubation",
+      "time": "10h",
+      "success": 20.001396947352546,
+      "precision": 0.30001135019723946
+    },
+    {
+      "id": "BE4max",
+      "label": "BE4max",
+      "medianScore": 16.0,
+      "technique": "Transfection",
+      "time": "24h",
+      "success": 20.02031923421886,
+      "precision": 0.30016509377802825
+    },
+    {
+      "id": "ABE7.10",
+      "label": "ABE7.10",
+      "medianScore": 1.0,
+      "technique": "Incubation",
+      "time": "10h",
+      "success": 20.001269952138678,
+      "precision": 0.30001031836112674
+    },
+    {
+      "id": "ABE8e",
+      "label": "ABE8e",
+      "medianScore": 1.33,
+      "technique": "Transfection",
+      "time": "24h",
+      "success": 20.00168903634444,
+      "precision": 0.3000137234202986
+    },
+    {
+      "id": "CasMINI-ge4.1",
+      "label": "CasMINI-ge4.1",
+      "medianScore": 144.0,
+      "technique": "Transfection",
+      "time": "3d",
+      "success": 20.182873107969744,
+      "precision": 0.30148584400225414
+    },
+    {
+      "id": "Un1Cas12f1-ge4.1",
+      "label": "Un1Cas12f1-ge4.1",
+      "medianScore": 40728.5,
+      "technique": "Transfection",
+      "time": "3d",
+      "success": 71.72324568017842,
+      "precision": 0.7202513711514498
+    },
+    {
+      "id": "LbCas12a-T7",
+      "label": "LbCas12a-T7",
+      "medianScore": 62994.5,
+      "technique": "Transfection",
+      "time": "3d",
+      "success": 100.0,
+      "precision": 0.95
+    },
+    {
+      "id": "Sniper ABE7.10",
+      "label": "Sniper ABE7.10",
+      "medianScore": 0.9,
+      "technique": "Incubation",
+      "time": "10h",
+      "success": 20.00114295692481,
+      "precision": 0.3000092865250141
+    }
+  ],
+  "links": [
+    {
+      "source": "SpCas9(K855A)",
+      "target": "AsCpf1_S542R/K607R",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1_S542R/K607R",
+      "target": "AsCpf1_S542R/K548V/N552R",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1_S542R/K548V/N552R",
+      "target": "PE2-nuclease",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "PE2-nuclease",
+      "target": "SpCas9-NmCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-NmCas9",
+      "target": "PE4",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "PE4",
+      "target": "SpCas9-SaCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-SaCas9",
+      "target": "PEmax-nuclease",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "PEmax-nuclease",
+      "target": "SaCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SaCas9",
+      "target": "NmCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "NmCas9",
+      "target": "NmeCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "Sniper ABE7.10",
+      "target": "ABE7.10",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "ABE7.10",
+      "target": "BE3",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "BE3",
+      "target": "SpCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9",
+      "target": "PE2",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9n",
+      "target": "SpRY-Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpRY-Cas9",
+      "target": "VP12Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "VP12Cas9",
+      "target": "Alt-R HiFi Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "Alt-R HiFi Cas9",
+      "target": "eSpCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "eNme2-C",
+      "target": "Nme2Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "Nme2Cas9",
+      "target": "AsCpf1",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1",
+      "target": "eNme2-C.NR",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "eNme2-C.NR",
+      "target": "SpRY",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpRY",
+      "target": "SpRY HF1",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpRY HF1",
+      "target": "LbCas12a",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "3xNLS SpyCas9",
+      "target": "3xNLS enAspCas12a",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "3xNLS enAspCas12a",
+      "target": "HiFi Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "HiFi Cas9",
+      "target": "SniperCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SniperCas9",
+      "target": "xCas9(3.7)",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "xCas9(3.7)",
+      "target": "LZ3 Cas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "LZ3 Cas9",
+      "target": "evoCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "evoCas9",
+      "target": "HypaCas9",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "HypaCas9",
+      "target": "SpCas9-HF1",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-HF1",
+      "target": "eSpCas9(1.1)",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "ABE8.8",
+      "target": "ABE8e-SpyMac",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-mSA*",
+      "target": "SpCas9-mSA",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "ABE8e",
+      "target": "BE4max",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "BE4max",
+      "target": "CasMINI-ge4.1",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "CasMINI-ge4.1",
+      "target": "Un1Cas12f1-ge4.1",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "Un1Cas12f1-ge4.1",
+      "target": "LbCas12a-T7",
+      "kind": "technique",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-NmCas9",
+      "target": "SpCas9-SaCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-SaCas9",
+      "target": "NmCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "NmCas9",
+      "target": "NmeCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "NmeCas9",
+      "target": "LbCas12a",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "ABE8.8",
+      "target": "ABE8e-SpyMac",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "ABE8e-SpyMac",
+      "target": "VP12Cas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "VP12Cas9",
+      "target": "Alt-R HiFi Cas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "Alt-R HiFi Cas9",
+      "target": "SpCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpCas9",
+      "target": "eSpCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "eNme2-C",
+      "target": "Nme2Cas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "Nme2Cas9",
+      "target": "eNme2-C.NR",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "eNme2-C.NR",
+      "target": "SpRY",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpRY",
+      "target": "SpRY HF1",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpCas9(K855A)",
+      "target": "AsCpf1_S542R/K607R",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1_S542R/K607R",
+      "target": "AsCpf1_S542R/K548V/N552R",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1_S542R/K548V/N552R",
+      "target": "ABE8e",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "ABE8e",
+      "target": "SpRY-Cas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpRY-Cas9",
+      "target": "BE4max",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "AsCpf1",
+      "target": "PE2",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "3xNLS SpyCas9",
+      "target": "3xNLS enAspCas12a",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "3xNLS enAspCas12a",
+      "target": "SniperCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SniperCas9",
+      "target": "xCas9(3.7)",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "xCas9(3.7)",
+      "target": "LZ3 Cas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "LZ3 Cas9",
+      "target": "CasMINI-ge4.1",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "CasMINI-ge4.1",
+      "target": "evoCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "evoCas9",
+      "target": "HypaCas9",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "HypaCas9",
+      "target": "SpCas9-HF1",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-HF1",
+      "target": "eSpCas9(1.1)",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "eSpCas9(1.1)",
+      "target": "Un1Cas12f1-ge4.1",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "Un1Cas12f1-ge4.1",
+      "target": "LbCas12a-T7",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "SpCas9-mSA*",
+      "target": "SpCas9-mSA",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "PE2-nuclease",
+      "target": "PE4",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "PE4",
+      "target": "PEmax-nuclease",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "Sniper ABE7.10",
+      "target": "ABE7.10",
+      "kind": "time",
+      "value": 1
+    },
+    {
+      "source": "ABE7.10",
+      "target": "BE3",
+      "kind": "time",
+      "value": 1
+    }
+  ]
+}

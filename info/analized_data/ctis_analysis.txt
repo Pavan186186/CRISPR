@@ -1,0 +1,104 @@
+CTIS Trials Data Analysis
+=========================
+
+Analyzing file: CTIS_trials_20251028.csv
+------------------------------
+Shape: (10000, 24)
+
+Columns:
+  - Trial number
+  - Protocol code
+  - Title of the trial
+  - Overall trial status
+  - Location(s) and recruitment status
+  - Age group
+  - Age range secondary identifier
+  - Gender
+  - Number of participants enrolled
+  - Trial region
+  - Medical conditions
+  - Therapeutic area
+  - Trial phase
+  - Product
+  - Primary endpoint
+  - Secondary endpoints
+  - Decision date
+  - Start date
+  - End date
+  - Global end of the trial
+  - Trial results
+  - Sponsor/Co-Sponsors
+  - Sponsor type
+  - Last updated
+
+Data Types:
+Trial number                          object
+Protocol code                         object
+Title of the trial                    object
+Overall trial status                  object
+Location(s) and recruitment status    object
+Age group                             object
+Age range secondary identifier        object
+Gender                                object
+Number of participants enrolled        int64
+Trial region                          object
+Medical conditions                    object
+Therapeutic area                      object
+Trial phase                           object
+Product                               object
+Primary endpoint                      object
+Secondary endpoints                   object
+Decision date                         object
+Start date                            object
+End date                              object
+Global end of the trial               object
+Trial results                         object
+Sponsor/Co-Sponsors                   object
+Sponsor type                          object
+Last updated                          object
+
+Missing Values:
+Trial number                             0
+Protocol code                         1599
+Title of the trial                       0
+Overall trial status                     0
+Location(s) and recruitment status       0
+Age group                                0
+Age range secondary identifier        6427
+Gender                                   0
+Number of participants enrolled          0
+Trial region                             1
+Medical conditions                       4
+Therapeutic area                         0
+Trial phase                              0
+Product                               2031
+Primary endpoint                      1868
+Secondary endpoints                   2741
+Decision date                            0
+Start date                            2175
+End date                              7984
+Global end of the trial               9226
+Trial results                            0
+Sponsor/Co-Sponsors                      0
+Sponsor type                             0
+Last updated                             0
+
+Basic Statistics (Numeric):
+       Number of participants enrolled
+count                     10000.000000
+mean                        327.641900
+std                        7968.366257
+min                           0.000000
+25%                          30.000000
+50%                          70.000000
+75%                         172.000000
+max                      690000.000000
+
+First 5 rows:
+        Trial number    Protocol code                                                                                                                                                                                                                       Title of the trial             Overall trial status                                                                                                                                                                               Location(s) and recruitment status                           Age group            Age range secondary identifier        Gender  Number of participants enrolled             Trial region                                                                            Medical conditions                                     Therapeutic area                               Trial phase                                                                                                           Product                                                                                                                                                                                                                                                                                                                                                         Primary endpoint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Secondary endpoints Decision date Start date End date Global end of the trial Trial results                                                          Sponsor/Co-Sponsors                                Sponsor type Last updated
+0  2023-509838-19-00              NaN                                                                                                                                          Repurposing Everolimus to enhance musculoskeletal Vitality and Ageing in The Elderly (RENOVATE)  Authorised, recruitment pending                                                                                                                                                                          Denmark:Authorised, recruitment pending                           65+ years                                       NaN  Female, Male                              120                 EEA only                                        General healthy elderly with stable medical conditions    ["Diseases [C] - Musculoskeletal Diseases [C05]"]        Therapeutic exploratory (Phase II)                                                      Tetracycline Capsules 250 mg, Afinitor 5 mg tablets, PLACEBO                                                                                                                                                                                                                                                                                                                              Changes in serum bone formation marker P1NP                                                                       Changes in serum bone resorption marker CTX, Changes in areal BMD at the lumbar spine, total hip and femoral neck measured by DXA scanning, Changes in volumetric BMD, bone microstructures and estimated strength at distal tibia and radius (HRpQT), Changes in muscle function, power and strength for upper and lower extremities will be assessed using a standard hydraulic hand dynamometer, the 30-second sit-to-stand test (RSS), respectively and gait speed., Changes in health-related quality of life assessment (SF-12 questionnaire)    14/03/2024        NaN      NaN                     NaN            No                                                   Odense University Hospital  Hospital/Clinic/Other health care facility   14/03/2024
+1  2023-509723-41-00      REALL_ CART                               A Phase I Clinical Trial of CART cell therapy for refractory/ relapsed acute lymphoblastic leukemia with unmet needs in children, adolescents and young adults: feasibility and safety study (REALL_CART).                   Not authorised                                                                                                                                                                                             Spain:Not authorised             18-64 years, 0-17 years                                       NaN  Female, Male                               10                 EEA only  Refractory/ relapsed acute lymphoblastic leukemia in children, adolescents and young adults.                   ["Diseases [C] - Neoplasms [C04]"]      Human Pharmacology (Phase I)-  Other                                                                          CART45RA-NKG2D CELLS, CART 19/22 T CELLS  In this umbrella trial, we will determine in parallel within independent cohorts: 1- The safety and feasibility of autologous CART-19/22 in children, adolescents and young adults with a CD19+/- CD22+ relapse/ refractory disease for a r/r B-ALL. 2- The safety and feasibility of allogeneic CART-NKG2D T in children, adolescents and young adults with r/r T-ALL.                                                        Expression of CD19/CD22 and NKG2DL on primary B- or T- cell ALL, respectively., Persistence of CART19/22 and CARTs-NKG2D cells in patients’ samples (peripheral blood, bone marrow, cerebrospinal fluid)., Peripheral blood cytokine profile from the patients’ serum., Identify the DNA methylation profile of NKG2DL (MICA, MICB AND ULBPs 1-3) in primary T-cell malignancies’ samples., Evaluate the presence of soluble NKG2DL and ANTI-MICA and ANTI-MICB antibodies in the serum of patients under CART-NKG2D therapy., Overall rate response in both arms.    07/05/2024        NaN      NaN                     NaN            No  Fundacion Para La Investigacion Biomedica Del Hospital Universitario La Paz            Patient organisation/association   07/05/2024
+2  2023-510220-72-00  BRONCHIPHARMA I                                                                                                            PHARMACOLOGICAL STRATEGIES OF INHALED ANTIBIOTHERAPY IN BRONCHIECTASIS WITH CHRONIC BRONCHIAL INFECTION: BRONCHIPHARMA STUDY.  Authorised, recruitment pending                                                                                                                                                                            Spain:Authorised, recruitment pending              65+ years, 18-64 years                    65-84 years, 85+ years  Female, Male                               75                 EEA only                                                                          Adult bronchiectasis  ["Diseases [C] - Respiratory Tract Diseases [C08]"]                Therapeutic use (Phase IV)  TOBRAMYCIN, Suero Fisiológico Braun 0,9% disolvente para uso parenteral Cloruro de sodio., COLISTIMETHATE SODIUM                                                                                                                                                                                                                                                                                                                                     Number of colony forming units (CFU)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN    03/06/2024        NaN      NaN                     NaN            No                                      Consorci Mar Parc De Salut De Barcelona  Hospital/Clinic/Other health care facility   03/06/2024
+3  2022-501417-31-00     MK-7684A-010  A Phase 3, Randomized, Double-blind, Active-Comparator-Controlled Clinical Study of Adjuvant MK-7684A (Vibostolimab with Pembrolizumab) Versus Adjuvant Pembrolizumab in Participants with High-risk Stage II-IV Melanoma (KEYVIBE-010)                   Not authorised  Poland:Not authorised, Italy:Not authorised, Germany:Not authorised, Sweden:Not authorised, Austria:Not authorised, France:Not authorised, Spain:Not authorised, Ireland:Not authorised, Belgium:Not authorised  18-64 years, 65+ years, 0-17 years  12-17 years, 65-84 years, 85+ years, N/A  Female, Male                              510  In both EEA and non-EEA                                                                   High-risk Resected Melanoma                   ["Diseases [C] - Neoplasms [C04]"]     Therapeutic confirmatory  (Phase III)                                                           KEYTRUDA 25 mg/mL concentrate for solution for infusion                                                                                                                                                                                                                                                                                                                                           Recurrence-Free Survival (RFS)  Distant Metastasis-Free Survival (DMFS), Overall Survival (OS), Number of Participants Who Experienced at Least One Adverse Event (AE), Number of Participants Who Discontinued Study Treatment Due to an AE, Change from Baseline in the European Organization for Research and Treatment of Cancer (EORTC)-Quality of Life Questionnaire-Core 30 (QLQ-C30) Global Health Status/Quality of Life (Items 29 and 30) Combined Score, Change from Baseline in the EORTC QLQ-C30 Physical Functioning (Items 1-5) Combined Score, Change from Baseline in the EORTC QLQ-C30 Role Functioning (Items 6 and 7) Combined Score    02/03/2023        NaN      NaN                     NaN            No                                                      Merck Sharp & Dohme LLC                      Pharmaceutical company   06/03/2023
+4  2022-502640-12-01     ESR-19-14434                                                DART (19-14434)\nDurvalumab (MEDI4736) After chemoRadioTherapy (DART) for NSCLC patients – a phase II translational and biomarker study investigating PDL1 positive and negative patients  Authorised, recruitment pending                                              Estonia:Authorised, recruitment pending, Norway:Authorised, recruitment pending, Finland:Authorised, recruitment pending, Lithuania:Authorised, recruitment pending              18-64 years, 65+ years                                       NaN  Female, Male                              130                 EEA only                                                            Non-small cell lung cancer (NSCLC)                   ["Diseases [C] - Neoplasms [C04]"]  Phase I and Phase II (Integrated)- Other                                                                                                               NaN                                                                                                                                                                                                                                                                                                                                                                      NaN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN    27/09/2024        NaN      NaN                     NaN            No                                                  Oslo University Hospital Hf  Hospital/Clinic/Other health care facility   23/10/2024
+

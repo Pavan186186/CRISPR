@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "All Clinical Trials"
+    },
+    {
+      "id": 1,
+      "name": "Phase 1 (Safety)"
+    },
+    {
+      "id": 2,
+      "name": "Phase 2 (Efficacy)"
+    },
+    {
+      "id": 3,
+      "name": "Phase 3 (Large-Scale)"
+    },
+    {
+      "id": 4,
+      "name": "FDA APPROVAL \u2b50"
+    },
+    {
+      "id": 5,
+      "name": "Long-term Follow-up"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 399,
+      "label": "399 trials enter Phase 1"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 175,
+      "label": "175 advance to Phase 2"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "value": 43,
+      "label": "43 advance to Phase 3"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "value": 1,
+      "label": "1 FDA approval (Casgevy)"
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "value": 80,
+      "label": "80 enter long-term follow-up"
+    }
+  ],
+  "casgevy_path": {
+    "trialName": "CTX001 (Casgevy)",
+    "disease": "Sickle Cell Disease & Beta-Thalassemia",
+    "approvalDate": "December 2023",
+    "significance": "First CRISPR therapy approved by FDA",
+    "path": [
+      "Phase 1",
+      "Phase 2",
+      "Phase 3",
+      "FDA APPROVAL \u2b50"
+    ]
+  },
+  "statistics": {
+    "total_trials": 707,
+    "phase1": 399,
+    "phase2": 175,
+    "phase3": 43,
+    "fda_approved": 1,
+    "followup": 80,
+    "progression_rates": {
+      "phase1_to_phase2": 43.9,
+      "phase2_to_phase3": 24.6,
+      "phase3_to_approval": 2.3
+    }
+  }
+}

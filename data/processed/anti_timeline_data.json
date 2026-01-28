@@ -1,0 +1,1253 @@
+[
+  {
+    "id": "NCT03681951",
+    "status": "Terminated",
+    "date": "2019-08-13",
+    "reason": "The study was terminated following an internal review of the company's current research and development portfolio.",
+    "phase": "PHASE2",
+    "condition": "Neoplasms, Pancreatic",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT02863913",
+    "status": "Withdrawn",
+    "date": "2019-09-01",
+    "reason": "No funding",
+    "phase": "PHASE1",
+    "condition": "Invasive Bladder Cancer Stage IV",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT03399448",
+    "status": "Terminated",
+    "date": "2020-10-09",
+    "reason": "Sponsor has terminated trial to pursue other targets.",
+    "phase": "PHASE1",
+    "condition": "Multiple Myeloma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT02867332",
+    "status": "Withdrawn",
+    "date": "2020-11-01",
+    "reason": "No funding",
+    "phase": "PHASE1",
+    "condition": "Metastatic Renal Cell Carcinoma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT02867345",
+    "status": "Withdrawn",
+    "date": "2020-12-01",
+    "reason": "no funding or finacial support",
+    "phase": "N/A",
+    "condition": "Hormone Refractory Prostate Cancer",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT05034978",
+    "status": "Terminated",
+    "date": "2022-07-31",
+    "reason": "failure in enrolling eligible subjects during COVID-19 outbreaks",
+    "phase": "N/A",
+    "condition": "SARS-CoV2 Infection",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2022-500676-59-00",
+    "status": "Temporarily halted",
+    "date": "2022-08-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "EBV-positive nasopharyngeal carcinoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT05066165",
+    "status": "Terminated",
+    "date": "2022-08-31",
+    "reason": "Pivoting to an allogeneic version of this program currently in preclinical development.",
+    "phase": "PHASE1",
+    "condition": "Acute Myeloid Leukemia",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2022-500703-49-01",
+    "status": "Temporarily halted",
+    "date": "2022-11-21",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+    "condition": "Duchenne muscular dystrophy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04535505",
+    "status": "Withdrawn",
+    "date": "2022-12-01",
+    "reason": "Not as a lead unit",
+    "phase": "N/A",
+    "condition": "Pertussis",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT03606486",
+    "status": "Terminated",
+    "date": "2022-12-09",
+    "reason": "Terminated due to low accrual",
+    "phase": "NA",
+    "condition": "High Grade Ovarian Serous Adenocarcinoma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2022-501322-38-00",
+    "status": "Temporarily halted",
+    "date": "2023-03-30",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Non-small cell lung cancer (NSCLC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505131-13-01",
+    "status": "Temporarily halted",
+    "date": "2023-04-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic use (Phase IV)",
+    "condition": "Glaucoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505322-34-00",
+    "status": "Temporarily halted",
+    "date": "2023-04-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Advanced or metastatic solid tumors",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-500899-66-00",
+    "status": "Temporarily halted",
+    "date": "2023-05-04",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Chronic pain due to central Neuropathy of any Genesis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502151-54-00",
+    "status": "Temporarily halted",
+    "date": "2023-05-04",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Chronic back pain",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503684-42-00",
+    "status": "Temporarily halted",
+    "date": "2023-05-05",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Neuroblastoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503341-60-00",
+    "status": "Temporarily halted",
+    "date": "2023-05-07",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "non-operable hepatocellular carcinoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-500281-10-02",
+    "status": "Temporarily halted",
+    "date": "2023-05-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Type 1 Gaucher Disease (Peripheral/Non-neuronopathic Manifestations)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502298-41-00",
+    "status": "Suspended",
+    "date": "2023-05-17",
+    "reason": "Status: Suspended",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "SCN2A and SCN8A developmental and epileptic encephalopathy (SCN2A DEE and SCN8A DEE)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-500898-13-00",
+    "status": "Temporarily halted",
+    "date": "2023-06-04",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Chronic Pain due to traumatic or post-operative peripheral Neuropathy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502049-91-00",
+    "status": "Temporarily halted",
+    "date": "2023-06-14",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "SEVERE COMMUNITY-ACQUIRED BACTERIAL PNEUMONIA (SCABP)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503718-66-00",
+    "status": "Temporarily halted",
+    "date": "2023-06-28",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Male and female patients aged \u2265 18 to \u2264 85 years with a completely resected superficial bladder cancer (Stage Ta tumors) with a classification of intermediate-risk according to the EAU and without CIS and/or G3 tumors after a TURB and one immediately post-operative intravesical instillation of MMC 40 mg or epirubicin 50 mg (only Poland).",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502503-30-00",
+    "status": "Temporarily halted",
+    "date": "2023-07-02",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Acute lymphoblastic leukemia",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505829-14-00",
+    "status": "Temporarily halted",
+    "date": "2023-07-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "First recurrence glioblastoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506178-11-00",
+    "status": "Temporarily halted",
+    "date": "2023-07-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Acute ischemic stroke",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-508318-41-00",
+    "status": "Temporarily halted",
+    "date": "2023-07-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Recurrent Glioblastoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502372-22-01",
+    "status": "Temporarily halted",
+    "date": "2023-07-21",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Metastatic Breast Cancer HR+, HER2-",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-504958-35-00",
+    "status": "Temporarily halted",
+    "date": "2023-08-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Immuno-oncology assessments",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506143-42-00",
+    "status": "Temporarily halted",
+    "date": "2023-08-24",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Chronic Hepatitis B",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-503093-36-00",
+    "status": "Temporarily halted",
+    "date": "2023-09-02",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "lung carcinoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503919-15-00",
+    "status": "Temporarily halted",
+    "date": "2023-11-30",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Prostatic Neoplasms",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-500897-32-00",
+    "status": "Temporarily halted",
+    "date": "2023-12-06",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Chronic pain due to diabetic polyneuropathy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-504350-36-00",
+    "status": "Temporarily halted",
+    "date": "2023-12-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Advanced non-small cell lung cancer with or without NFE2L2/KEAP1/CUL3 mutations in adult patients",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506174-12-00",
+    "status": "Temporarily halted",
+    "date": "2023-12-14",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Amyotrophic Lateral Sclerosis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505356-22-00",
+    "status": "Temporarily halted",
+    "date": "2023-12-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Liver limited unresectable colorectal cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506716-41-00",
+    "status": "Temporarily halted",
+    "date": "2023-12-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Adult patients with advanced (metastatic or unresectable) KRAS G12C\nmutant solid tumors",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04244656",
+    "status": "Terminated",
+    "date": "2024-01-04",
+    "reason": "Patients to be followed up in the CRSP-ONC-LTF study",
+    "phase": "PHASE1",
+    "condition": "Multiple Myeloma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2023-507560-39-00",
+    "status": "Temporarily halted",
+    "date": "2024-01-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Acquired Antithrombin Deficiency (Heparin Resistance)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506480-34-00",
+    "status": "Temporarily halted",
+    "date": "2024-01-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Danon Disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505534-98-00",
+    "status": "Suspended",
+    "date": "2024-02-05",
+    "reason": "Status: Suspended",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Microsatellite stable colorectal cancer patients",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-510968-22-00",
+    "status": "Temporarily halted",
+    "date": "2024-02-28",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "restless leg syndrome",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513562-19-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-07",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "End-Stage Kidney Disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-517078-52-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Patients operated with an IPAA for ulcerative colitis woth active recurrent pouchitis.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513535-24-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-10",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Refractory or Recurrent Solid Tumor",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515237-15-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-10",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "Advanced head and neck cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518524-69-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Ischaemic cardiomyopathy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-504957-11-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Metastatic castration resistant prostate cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2022-502903-31-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-22",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Patients with ADHD (according to ICD-10 / DSM-5)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511266-36-00",
+    "status": "Temporarily halted",
+    "date": "2024-03-26",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "The clinical trial itself does not investigate a medical condition or disease. Rather, the safety and immunogenicity of a vaccine against SARS-CoV-2 infection is being investigated.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-505674-15-00",
+    "status": "Revoked",
+    "date": "2024-04-16",
+    "reason": "Status: Revoked",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Hypophosphatasia",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-506882-70-00",
+    "status": "Temporarily halted",
+    "date": "2024-04-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Non-small-cell lung cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-508988-73-00",
+    "status": "Temporarily halted",
+    "date": "2024-04-22",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Cytomegalovirus (CMV) infection in children and adolescents who have received a hematopoietic stem cell transplant (HSCT) or a solid organ transplant (SOT)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511501-37-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-07",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Advanced solid tumours",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512313-41-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Stable Angina Pectoris",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-509238-20-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "High grade glioma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-507589-22-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-17",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Advanced Urothelial Carcinoma and Other Solid Tumors with Activating FGFR3 Gene Alterations",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-507598-16-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-21",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Diffuse Midline Gliomas (DMGs) including Diffuse Intrinsic Pontine Gliomas (DIPGs)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-509644-10-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-21",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Advanced Non-small Cell Lung Cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513576-18-00",
+    "status": "Temporarily halted",
+    "date": "2024-05-28",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Cervical Cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503539-16-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-02",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Non-small Cell Lung Cancer (NSCLC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-509901-57-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Duchenne Muscular Dystrophy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-514588-24-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+    "condition": "Acute Myeloid Leukaemia (AML), Myelodysplastic Syndrome (MDS), Chronic Myelomonocytic Leukemia (CMML)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-516244-25-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Kawasaki disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-504586-24-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-14",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Healthy Participants",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-503281-23-00",
+    "status": "Temporarily halted",
+    "date": "2024-06-17",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+    "condition": "Cystic fibrosis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511227-33-00",
+    "status": "Suspended",
+    "date": "2024-06-28",
+    "reason": "Status: Suspended",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Metastatic colorectal cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515996-37-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "peritoneal carcinosis of ovarian origin cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511362-37-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Non squamous non-small cell lung cancer (NSCLC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512397-95-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-15",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Colorectal Liver Metastases",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-507865-24-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-17",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Advanced (unresectable/metastatic) melanoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512908-19-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- Bioequivalence Study",
+    "condition": "No medical condition.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-508766-14-00",
+    "status": "Suspended",
+    "date": "2024-07-23",
+    "reason": "Status: Suspended",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "Sickle Cell Disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-508397-29-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-23",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Prophylaxis against liver allograft rejection following tolerance induction",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-509569-19-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-26",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "venous thromboembolism (VTE)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-509451-14-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-30",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+    "condition": "Metastatic uveal melanoma, other GNAQ/11 mutant melanomas (e.g. skin or mucosal melanoma)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-514386-19-00",
+    "status": "Temporarily halted",
+    "date": "2024-07-31",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Patients with very high-risk prostate cancer (as defined by a total Gleason-Score \u22654+4 [ISUP-GG 4+5] and clinical stage cT3 (digital rectal examinations or imaging based) plus clinical nodal status cN+ or Serum-PSA level > 20 ng/ml who are candidates for radical prostatectomy with pelvic lymph node dissection.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511517-38-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-16",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "congenital heart malformation inchildren",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-510560-12-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-16",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "High-risk smoldering multiple myeloma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512927-36-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Advanced or Metastatic Urothelial Carcinoma or Other Solid Tumors",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-507705-34-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-20",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Moderate to Severe Active Ulcerative Colitis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515236-69-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-23",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase III and phase IV (Integrated)",
+    "condition": "Acute coronary syndromes",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512856-40-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-26",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Giant Cell Arteritis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511708-18-00",
+    "status": "Temporarily halted",
+    "date": "2024-08-27",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Locally advanced or metastatic KRAS G12C-mutated non-small cell lung cancer with a PD-L1 expression < 1% or a PD-L1 expression \u2265 1% and an STK11 co-mutation.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04502446",
+    "status": "Terminated",
+    "date": "2024-08-30",
+    "reason": "Patients to be followed up in the CRSP-ONC-LTF study",
+    "phase": "PHASE1",
+    "condition": "T Cell Lymphoma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT04535648",
+    "status": "Withdrawn",
+    "date": "2024-09-01",
+    "reason": "This clinical trial has been terminated\u3002",
+    "phase": "N/A",
+    "condition": "Enterovirus Infections",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2023-505661-89-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-04",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Early-stage, Hormone Receptor (HR)-positive / Human Epidermal Growth Factor Receptor 2 (HER2)-negative, breast cancer (BC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513069-37-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Healthy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-516582-36-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "Early stage HER2-positive breast cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-514033-37-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-10",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Crohn's Disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512951-18-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Hepatic Oligometastatic Adenocarcinoma of the Pancreas",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511034-12-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-26",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Crohn's disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513420-41-00",
+    "status": "Suspended",
+    "date": "2024-09-30",
+    "reason": "Status: Suspended",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "prematurity in neonates",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-517413-33-00",
+    "status": "Temporarily halted",
+    "date": "2024-09-30",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Idiopathic Parkinson's Disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04035434",
+    "status": "Terminated",
+    "date": "2024-10-04",
+    "reason": "Patients to be followed up in the CRSP-ONC-LTF study",
+    "phase": "PHASE1",
+    "condition": "B-cell Malignancy",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT04438083",
+    "status": "Terminated",
+    "date": "2024-10-08",
+    "reason": "Patients to be followed up in the CRSP-ONC-LTF study",
+    "phase": "PHASE1",
+    "condition": "Renal Cell Carcinoma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2023-510371-55-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Complement-mediated diseases",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-510082-10-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Advanced non-small cell lung cancer harboring the KRAS G12C mutation",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-517770-14-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-17",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic use (Phase IV)",
+    "condition": "Intubation",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518347-38-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Meni\u00e8re's disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-514155-15-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-21",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Advanced solid tumors and colorectal cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515292-35-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-31",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Acute Myeloid Leukemia",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-519145-30-00",
+    "status": "Temporarily halted",
+    "date": "2024-10-31",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Healthy volunteers",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-517592-20-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Emergence delirium",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518003-22-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Complicated urinary tract infections including acute pyelonephritis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-513302-56-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-12",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Generalized Anxiety Disorder",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518862-28-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "female patients with bacterial vaginosis (BV), respectively vulvovaginal candidiasis (VVC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515938-32-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-19",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic use (Phase IV)",
+    "condition": "Chronic Lymphocytic Leukemia",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-515152-20-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-25",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Stage III and high-risk stage II resected colon cancer patients.",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518869-99-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-26",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Cushing's disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-517922-24-00",
+    "status": "Temporarily halted",
+    "date": "2024-11-27",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "AML: Acute Myeloid Leukemia/ cancer of blood and bone marrow",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-510980-40-00",
+    "status": "Temporarily halted",
+    "date": "2024-12-07",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Small cell lung cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-511028-15-00",
+    "status": "Temporarily halted",
+    "date": "2024-12-08",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Progressive Multiple Sclerosis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512626-28-00",
+    "status": "Temporarily halted",
+    "date": "2024-12-09",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Duchenne Muscular Dystrophy",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2023-510559-41-00",
+    "status": "Temporarily halted",
+    "date": "2024-12-11",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Recurrent or Metastatic Squamous Cell Carcinoma of the Head and Neck",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518167-35-01",
+    "status": "Temporarily halted",
+    "date": "2024-12-16",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Patients with Metastatic Osteosarcoma",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518004-49-00",
+    "status": "Temporarily halted",
+    "date": "2024-12-17",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- Other",
+    "condition": "Healthy children",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04443907",
+    "status": "Terminated",
+    "date": "2025-01-06",
+    "reason": "The decision of early termination was made due to business reasons and was not a consequence of any safety concern.",
+    "phase": "PHASE1",
+    "condition": "Sickle Cell Disease",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT06622668",
+    "status": "Withdrawn",
+    "date": "2025-01-09",
+    "reason": "Clinical trial ITL-3001-CL-101 for the investigational product NTLA-3001 was withdrawn due to prioritization of other Sponsor programs.",
+    "phase": "PHASE1",
+    "condition": "Lung Disease",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2023-510408-32-02",
+    "status": "Temporarily halted",
+    "date": "2025-01-23",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Type 1 diabetes",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-519105-35-00",
+    "status": "Temporarily halted",
+    "date": "2025-01-28",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "tardive dyskinesia",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2025-520755-91-00",
+    "status": "Temporarily halted",
+    "date": "2025-01-29",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic exploratory (Phase II)",
+    "condition": "Colorectal cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-519808-27-00",
+    "status": "Temporarily halted",
+    "date": "2025-01-30",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+    "condition": "B-cell acute lymphoblastic leukemia. with resistance, relapse or detectable measurable residual disease",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2025-521283-35-00",
+    "status": "Temporarily halted",
+    "date": "2025-02-04",
+    "reason": "Status: Temporarily halted",
+    "phase": "Therapeutic confirmatory  (Phase III)",
+    "condition": "Cardiac arrest",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT04925206",
+    "status": "Terminated",
+    "date": "2025-03-12",
+    "reason": "Development plan change",
+    "phase": "PHASE1",
+    "condition": "Transfusion Dependent Beta-Thalassaemia",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2024-515635-30-00",
+    "status": "Temporarily halted",
+    "date": "2025-04-02",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Coagulopathy, Sepsis",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT06025032",
+    "status": "Withdrawn",
+    "date": "2025-04-08",
+    "reason": "Huidagene stopped this program as lack of patients in China",
+    "phase": "EARLY_PHASE1",
+    "condition": "Congenital Hearing Loss",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2025-521682-27-00",
+    "status": "Suspended",
+    "date": "2025-04-18",
+    "reason": "Status: Suspended",
+    "phase": "Phase III and phase IV (Integrated)",
+    "condition": "Oral cancer",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2025-520584-41-00",
+    "status": "Temporarily halted",
+    "date": "2025-05-05",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Metabolism dysfunction",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-518440-20-00",
+    "status": "Temporarily halted",
+    "date": "2025-05-27",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)- First administration to humans",
+    "condition": "Autoimmune Diseases (Healthy Volunteers)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT05309733",
+    "status": "Terminated",
+    "date": "2025-05-28",
+    "reason": "Lack of Funding",
+    "phase": "N/A",
+    "condition": "Leukemia, Myeloid, Acute",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT06128044",
+    "status": "Terminated",
+    "date": "2025-05-30",
+    "reason": "Sponsor Decision - Pipeline Reprioritization",
+    "phase": "PHASE1",
+    "condition": "Acute Myeloid Leukemia, in Relapse",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2024-519301-36-00",
+    "status": "Temporarily halted",
+    "date": "2025-06-18",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "colorectal carcinoma (CRC)",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT03332030",
+    "status": "Withdrawn",
+    "date": "2025-07-01",
+    "reason": "Suspended due to cessation of funding",
+    "phase": "N/A",
+    "condition": "Neurofibromatosis Type 1",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "2024-513664-25-00",
+    "status": "Temporarily halted",
+    "date": "2025-10-03",
+    "reason": "Status: Temporarily halted",
+    "phase": "Human Pharmacology (Phase I)-  Other",
+    "condition": "Virus diseases",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "2024-512505-66-00",
+    "status": "Temporarily halted",
+    "date": "2025-12-02",
+    "reason": "Status: Temporarily halted",
+    "phase": "Phase II and Phase III (Integrated)",
+    "condition": "HIV-1 Infection",
+    "source": "EU CTIS"
+  },
+  {
+    "id": "NCT06362421",
+    "status": "Withdrawn",
+    "date": "2026-08-01",
+    "reason": "PI not moving forward with study at our institution",
+    "phase": "N/A",
+    "condition": "Oropharyngeal Squamous Cell Carcinoma",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT06752876",
+    "status": "Withdrawn",
+    "date": "2029-04-01",
+    "reason": "Sponsor Strategic Pipeline Prioritization with Focus on CB-010 and CB-011 Oncology Programs",
+    "phase": "PHASE1",
+    "condition": "Systemic Lupus Erythematosus",
+    "source": "ClinicalTrials.gov"
+  },
+  {
+    "id": "NCT05037669",
+    "status": "Withdrawn",
+    "date": "2038-01-01",
+    "reason": "No available investigational product",
+    "phase": "PHASE1",
+    "condition": "Acute Lymphoblastic Leukemia",
+    "source": "ClinicalTrials.gov"
+  }
+]

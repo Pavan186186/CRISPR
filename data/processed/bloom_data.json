@@ -1,0 +1,436 @@
+[
+  {
+    "Country_Region": "Australia",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Canada",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "Chile",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Costa Rica",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Israel",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Japan",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "Philippines",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "United States",
+    "Category": "Crops/Food",
+    "Value": 10.0,
+    "OriginalValue": 8.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "Ecuador",
+    "Category": "Animals",
+    "Value": 10.0,
+    "OriginalValue": 10.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Brazil",
+    "Category": "Animals",
+    "Value": 10.0,
+    "OriginalValue": 10.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Argentina",
+    "Category": "Animals",
+    "Value": 10.0,
+    "OriginalValue": 10.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Paraguay",
+    "Category": "Animals",
+    "Value": 10.0,
+    "OriginalValue": 10.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Japan",
+    "Category": "Animals",
+    "Value": 8.0,
+    "OriginalValue": 8.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Canada",
+    "Category": "Animals",
+    "Value": 8.0,
+    "OriginalValue": 8.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Australia",
+    "Category": "Animals",
+    "Value": 8.0,
+    "OriginalValue": 8.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Argentina",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Bangladesh",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Brazil",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "China",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "Colombia",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Approved crops"
+  },
+  {
+    "Country_Region": "Ecuador",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Ghana",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Honduras",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "India",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Indonesia",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Kenya",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Malawi",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Nigeria",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Pakistan",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Paraguay",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Uruguay",
+    "Category": "Crops/Food",
+    "Value": 7.5,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Norway",
+    "Category": "Animals",
+    "Value": 6.0,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Central America",
+    "Category": "Animals",
+    "Value": 6.0,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Uruguay",
+    "Category": "Animals",
+    "Value": 6.0,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "India",
+    "Category": "Animals",
+    "Value": 6.0,
+    "OriginalValue": 6.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Cuba",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Guatemala",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "El Salvador",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "European Union",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Norway",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "South Africa",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "South Korea",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Switzerland",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "United Kingdom",
+    "Category": "Crops/Food",
+    "Value": 5.0,
+    "OriginalValue": 4.0,
+    "Notes": "Field trials"
+  },
+  {
+    "Country_Region": "Africa",
+    "Category": "Animals",
+    "Value": 5.0,
+    "OriginalValue": 5.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Russia",
+    "Category": "Animals",
+    "Value": 5.0,
+    "OriginalValue": 5.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Israel",
+    "Category": "Animals",
+    "Value": 5.0,
+    "OriginalValue": 5.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Switzerland",
+    "Category": "Animals",
+    "Value": 5.0,
+    "OriginalValue": 5.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "China",
+    "Category": "Animals",
+    "Value": 5.0,
+    "OriginalValue": 5.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "United States",
+    "Category": "Animals",
+    "Value": 4.0,
+    "OriginalValue": 4.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "New Zealand",
+    "Category": "Animals",
+    "Value": 4.0,
+    "OriginalValue": 4.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Bolivia",
+    "Category": "Crops/Food",
+    "Value": 2.5,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Mexico",
+    "Category": "Crops/Food",
+    "Value": 2.5,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "New Zealand",
+    "Category": "Crops/Food",
+    "Value": 2.5,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Peru",
+    "Category": "Crops/Food",
+    "Value": 2.5,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "United Kingdom",
+    "Category": "Animals",
+    "Value": 2.0,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "European Union",
+    "Category": "Animals",
+    "Value": 2.0,
+    "OriginalValue": 2.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Chile",
+    "Category": "Animals",
+    "Value": 1.0,
+    "OriginalValue": 1.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Ukraine",
+    "Category": "Animals",
+    "Value": 1.0,
+    "OriginalValue": 1.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Mexico",
+    "Category": "Animals",
+    "Value": 1.0,
+    "OriginalValue": 1.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Colombia",
+    "Category": "Animals",
+    "Value": 1.0,
+    "OriginalValue": 1.0,
+    "Notes": ""
+  },
+  {
+    "Country_Region": "Russia",
+    "Category": "Crops/Food",
+    "Value": 0.0,
+    "OriginalValue": 0.0,
+    "Notes": ""
+  }
+]

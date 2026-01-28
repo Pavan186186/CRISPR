@@ -1,0 +1,38 @@
+[
+  {
+    "region": "Asia Pacific",
+    "restrictive": 23,
+    "moderate": 44,
+    "permissive": 33
+  },
+  {
+    "region": "North America",
+    "restrictive": 29,
+    "moderate": 29,
+    "permissive": 43
+  },
+  {
+    "region": "South America",
+    "restrictive": 16,
+    "moderate": 27,
+    "permissive": 57
+  },
+  {
+    "region": "Middle East",
+    "restrictive": 29,
+    "moderate": 29,
+    "permissive": 43
+  },
+  {
+    "region": "Africa",
+    "restrictive": 0,
+    "moderate": 100,
+    "permissive": 0
+  },
+  {
+    "region": "Europe",
+    "restrictive": 13,
+    "moderate": 42,
+    "permissive": 45
+  }
+]

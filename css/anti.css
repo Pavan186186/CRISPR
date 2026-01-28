@@ -1,0 +1,1124 @@
+/* ===========================
+   RESET + BASE
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #0a0202;
+  color: #e0e0e0;
+  overflow-y: scroll;
+  /* Always show scrollbar */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+/* Custom Themed Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #0a0202;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(40, 10, 10, 0.3);
+  border-left: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff4d4d 0%, #8B0000 100%);
+  border-radius: 6px;
+  border: 2px solid rgba(10, 2, 2, 0.5);
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6666 0%, #a00000 100%);
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.8);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ff0000;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d4d rgba(40, 10, 10, 0.3);
+}
+
+/* ===========================
+   GLOBE CANVAS
+   =========================== */
+#globe-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  cursor: grab;
+  will-change: transform;
+  transition: transform 0.8s ease;
+}
+
+#globe-canvas:active {
+  cursor: grabbing;
+}
+
+/* Shift globe left during final choropleth scene */
+#globe-canvas.shift-left {
+  transform: translateX(-15%);
+}
+
+/* ===========================
+   GLOBE TOOLTIP (MAIN REPO)
+   =========================== */
+.globe-tooltip {
+  position: fixed !important;
+  background: rgba(10, 0, 20, 0.95);
+  border: 1px solid #ff4d88;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Courier New";
+  pointer-events: none !important;
+  opacity: 0;
+  z-index: 999999 !important;
+  box-shadow: 0 0 18px rgba(255, 0, 120, 0.9);
+  text-shadow: 0 0 6px #ff1a75;
+  transition: opacity 0.15s ease-out;
+}
+
+/* ===========================
+   LOADING OVERLAY
+   =========================== */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#loading-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ff4d4d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: opacity 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+#progress-bar-container {
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+#progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #ff4d4d;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+
+#scroll-prompt {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ff4d4d;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   FINAL CHOROPLETH LEGEND
+   =========================== */
+#choropleth-legend {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(20, 0, 0, 0.8);
+  border: 1px solid #ff4d4d;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 50;
+  opacity: 0;
+  /* hidden by default */
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  /* pass-through unless visible */
+}
+
+#choropleth-le.widget {
+  position: fixed;
+  width: 25vw;
+  /* Fixed width */
+  height: 35vh;
+  /* Fixed height */
+  background: rgba(10, 0, 0, 0.85);
+  /* Darker, more opaque background */
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 2px;
+  /* Minimal padding */
+  color: #ffcccc;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0.4;
+  transform: scale(0.8);
+  pointer-events: none;
+  /* Allow clicks to pass through when not focused */
+  /* backdrop-filter: blur(4px); Removed for performance (Pro style) */
+  z-index: 10;
+  will-change: transform, opacity;
+  /* Performance optimization */
+}
+
+/* enable pointer events when legend is visible via inline style */
+#choropleth-legend[style*="opacity: 1"] {
+  pointer-events: auto;
+}
+
+#choropleth-legend h4 {
+  color: #ff4d4d;
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+#choropleth-legend .gradient-bar {
+  width: 200px;
+  height: 10px;
+  background: linear-gradient(to right, #800000, #ff4d4d, #ff9999);
+  margin-bottom: 5px;
+}
+
+#choropleth-legend .labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  color: #aaa;
+}
+
+/* ===========================
+   FOCUS BACKDROP
+   =========================== */
+#focus-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /* Darker background instead of blur */
+  /* backdrop-filter: blur(4px); REMOVED for performance */
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  pointer-events: none;
+  z-index: 9;
+}
+
+#focus-backdrop.active {
+  opacity: 1;
+}
+
+/* ===========================
+   DASHBOARD LAYOUT
+   =========================== */
+#dashboard-grid {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+/* Widget Panels - Matching PRO exactly */
+.widget {
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 900px;
+  max-height: 80vh;
+
+  pointer-events: auto;
+  overflow: auto;
+
+  /* Default State: Corner/Background (defined by specific IDs) */
+  opacity: 0.6;
+  transform-origin: center;
+  transition: all 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  z-index: 15;
+  visibility: visible;
+  will-change: opacity, transform;
+}
+
+/* Focused State: CENTER (initial focus) */
+.widget.focused {
+  transform: translate(-50%, -50%) scale(1) !important;
+  opacity: 1;
+  z-index: 50;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ff4d4d;
+  background: rgba(10, 0, 0, 0.95);
+  width: 90vw;
+  max-width: 1600px;
+  height: auto;
+  max-height: 90vh;
+}
+
+/* Focused State: LEFT side (after scroll, text goes on right) */
+.widget.focused-left {
+  transform: translate(-70%, -50%) scale(0.85) !important;
+  opacity: 1;
+  z-index: 50;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ff4d4d;
+  background: rgba(10, 0, 0, 0.95);
+}
+
+.widget.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.3) !important;
+}
+
+.widget h3 {
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 77, 77, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/* Specific Widget Positions (Corners) - Matching PRO exactly */
+#top-left-widget {
+  transform: translate(-100%, -100%) scale(0.4);
+}
+
+#top-right-widget {
+  transform: translate(0%, -100%) scale(0.4);
+}
+
+#bottom-left-widget {
+  transform: translate(-100%, 0%) scale(0.4);
+  min-height: 500px;
+}
+
+#bottom-right-widget {
+  transform: translate(0%, 0%) scale(0.4);
+  min-height: 500px;
+}
+
+/* Additional Anti widgets */
+#bubble-widget {
+  transform: translate(-100%, -50%) scale(0.4);
+}
+
+#radar-widget {
+  transform: translate(0%, -50%) scale(0.4);
+}
+
+#price-inequality-widget {
+  transform: translate(-50%, 0%) scale(0.4);
+}
+
+/* Containers for visualizations */
+#bar-chart-container,
+#timeline-container,
+#regulation-chart-container {
+  width: 100%;
+  height: 450px;
+}
+
+#radar-chart-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Boxplot container uses flex for responsive sizing */
+#bottom-left-widget {
+  display: flex;
+  flex-direction: column;
+  min-height: 650px;
+  padding: 2px;
+  overflow-x: auto;
+  overflow-y: auto;
+  /* Allow vertical scroll if needed */
+}
+
+#boxplot-svg {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  max-height: 90vh;
+  /* min-width removed to allow scaling */
+}
+
+#terminal-log {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+#terminal-log .warning {
+  color: #ff4d4d;
+}
+
+/* ===========================
+   SCROLL STEPS
+   =========================== */
+#steps-container {
+  position: relative;
+  z-index: 100;
+  /* Higher than widgets (50) so story cards are visible */
+  margin-top: -100vh;
+  /* overlay scroll triggers over viewport */
+  pointer-events: none;
+}
+
+.step-trigger {
+  height: 250vh;
+  pointer-events: none;
+}
+
+.spacer {
+  height: 150vh;
+}
+
+/* ensure the first spacer is tall enough to get off the top */
+#steps-container .step-trigger:first-child {
+  height: 200vh;
+}
+
+/* ===========================
+   GENERIC CHART STYLING
+   =========================== */
+.chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: url(#bar-gradient);
+}
+
+.axis path,
+.axis line {
+  stroke: #4c1a1a;
+}
+
+.axis text {
+  fill: #9c5555;
+  font-size: 0.7rem;
+}
+
+.area {
+  fill: url(#area-gradient);
+}
+
+.area-line {
+  fill: none;
+  stroke: #ff4d4d;
+  stroke-width: 2px;
+}
+
+/* ===========================
+   BOX PLOT CONTROLS
+   =========================== */
+#boxplot-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-group .label {
+  font-size: 0.75rem;
+  color: #ff4d4d;
+  /* Red label */
+  font-weight: 600;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.control-group.info .label {
+  font-weight: 400;
+  color: #9ca3af;
+  font-style: italic;
+  text-transform: none;
+}
+
+#boxplot-controls button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #ff4d4d;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+#boxplot-controls button:hover {
+  background: rgba(255, 77, 77, 0.2);
+}
+
+#boxplot-controls button.active {
+  background: #ff4d4d;
+  color: #000;
+  /* Black text on red */
+  border-color: #ff4d4d;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* ===========================
+   BOX PLOT STYLING (REFINED)
+   =========================== */
+
+/* Widget Header */
+.widget-header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.widget-header h3 {
+  color: #ff4d4d;
+  /* Red header */
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  border: none;
+  padding: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.widget-header .subtitle {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* danger gradient background for the boxplot widget */
+/* danger gradient background for the boxplot widget - minimal style */
+.danger-bg {
+  background: transparent;
+  border: none;
+}
+
+.danger-bg svg {
+  background: transparent;
+}
+
+/* box + whiskers + outliers */
+.boxplot .box {
+  fill: transparent;
+  /* Hollow box */
+  stroke: #ffffff;
+  /* White outline */
+  stroke-width: 1.5px;
+}
+
+.boxplot .median {
+  stroke: #ff4d4d;
+  /* Red median */
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 4px #fff);
+  /* White glow effect */
+}
+
+.boxplot .whisker {
+  stroke: #ffffff;
+  /* White whiskers */
+  stroke-width: 1px;
+}
+
+.boxplot .outlier {
+  fill: #ff4d4d;
+  /* Red outliers */
+  opacity: 0.8;
+  r: 2.5;
+  filter: drop-shadow(0 0 2px #f00);
+  /* Red glow effect */
+}
+
+/* axes inside boxplot */
+.boxplot .axis path,
+.boxplot .axis line {
+  stroke: #4b5563;
+}
+
+.boxplot .axis text {
+  fill: #d1d5db;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.boxplot .y-axis-label {
+  fill: #d1d5db;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+/* ===========================
+   BOX PLOT TOOLTIP (#tooltip)
+   =========================== */
+#tooltip {
+  position: fixed;
+  /* follows the mouse in viewport coords */
+  pointer-events: none !important;
+  background: rgba(4, 10, 24, 0.96);
+  color: #e5e7eb;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  z-index: 9999999 !important;
+  /* Ensure it is on top of EVERYTHING */
+  opacity: 0;
+  transition: opacity 0.12s ease-out, transform 0.12s ease-out;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  max-width: 260px;
+  transform: translateY(4px);
+  /* subtle lift on hover */
+}
+
+#tooltip strong {
+  font-weight: 700;
+}
+
+/* ===========================
+   BUBBLE CHART STYLES
+   =========================== */
+
+/* Bubble controls (match boxplot controls) */
+#bubble-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+#bubble-controls button {
+  background: #f5f5f5;
+  border: 1px solid #b9b9b9;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#bubble-controls button:hover {
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#bubble-controls button.active {
+  background: #ff4d4d;
+  color: #fff;
+  border-color: #ff4d4d;
+}
+
+/* Stats panel */
+#bubble-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 77, 77, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 77, 77, 0.3);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.8rem;
+  color: #ff4d4d;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.6rem;
+  color: #9c5555;
+  letter-spacing: 1px;
+}
+
+/* Bubble chart container */
+#bubble-chart-container {
+  width: 100%;
+  height: 360px;
+  /* Compact - no wasted space */
+  position: relative;
+  overflow: hidden;
+  /* Prevent scrolling */
+}
+
+/* Comparison box overlay */
+#comparison-box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(139, 0, 0, 0.9);
+  border: 1px solid #ff4d4d;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 250px;
+  transition: opacity 0.3s ease;
+}
+
+#comparison-box.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#comparison-box h4 {
+  color: #ff4d4d;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+#comparison-box p {
+  color: #e0e0e0;
+  font-size: 0.7rem;
+  margin: 0.3rem 0;
+}
+
+.comparison-note {
+  color: #ccc;
+  font-size: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.comparison-bubbles {
+  margin: 0.5rem 0;
+}
+
+.comparison-item {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0;
+  text-align: center;
+}
+
+.comparison-question {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: #ffaa00;
+  border-top: 1px solid rgba(255, 170, 0, 0.3);
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+/* Bubble circles */
+.bubble-circle {
+  fill-opacity: 0.7;
+  stroke: #fff;
+  stroke-width: 1px;
+  cursor: pointer;
+  transition: fill-opacity 0.2s ease;
+}
+
+.bubble-circle:hover {
+  fill-opacity: 1;
+  stroke-width: 2px;
+}
+
+.bubble-circle.small-trial {
+  filter: url(#bubble-glow);
+}
+
+/* Comparison reference bubbles */
+.reference-bubble {
+  fill: rgba(255, 255, 255, 0.2);
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 2px;
+  stroke-dasharray: 5, 5;
+  pointer-events: none;
+}
+
+/* ===========================
+   PRICE INEQUALITY WIDGET
+   =========================== */
+
+#price-inequality-widget {
+  /* Center focused widget */
+  width: 1200px;
+  /* Wider as requested */
+  max-width: 98vw;
+  height: 700px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /* Keep animations contained */
+}
+
+
+#price-chart-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Central Price Tag */
+.price-center-group {
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.3));
+}
+
+.price-circle {
+  fill: rgba(40, 0, 0, 0.9);
+  stroke: #ff4d4d;
+  stroke-width: 3px;
+  animation: price-pulse 3s infinite ease-in-out;
+}
+
+.price-text {
+  fill: #ff4d4d;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+.price-subtext {
+  fill: #ffaaaa;
+  font-size: 0.8rem;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+@keyframes price-pulse {
+  0% {
+    stroke-width: 3px;
+    filter: drop-shadow(0 0 5px rgba(255, 77, 77, 0.2));
+  }
+
+  50% {
+    stroke-width: 5px;
+    filter: drop-shadow(0 0 15px rgba(255, 77, 77, 0.6));
+  }
+
+  100% {
+    stroke-width: 3px;
+    filter: drop-shadow(0 0 5px rgba(255, 77, 77, 0.2));
+  }
+}
+
+/* Comparison Nodes */
+.comparison-node rect {
+  fill: rgba(20, 0, 0, 0.8);
+  stroke: #ff4d4d;
+  stroke-width: 1px;
+  transition: all 0.3s ease;
+}
+
+.comparison-node text {
+  fill: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.comparison-node:hover rect {
+  fill: rgba(100, 0, 0, 0.9);
+  stroke: #fff;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 8px #ff4d4d);
+  cursor: pointer;
+}
+
+.comparison-line {
+  stroke: #ff4d4d;
+  stroke-width: 1px;
+  stroke-dasharray: 5, 5;
+  opacity: 0.6;
+}
+
+/* Tooltip for Price Chart */
+#price-tooltip {
+  position: absolute;
+  background: rgba(10, 0, 0, 0.95);
+  border: 1px solid #ff4d4d;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8rem;
+  pointer-events: none;
+  z-index: 100;
+  max-width: 200px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+#price-tooltip.hidden {
+  opacity: 0;
+}
+
+/* Stats Overlay - Right Side Sidebar */
+#price-overlay {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  /* More space from edge */
+  transform: translateY(-50%);
+  width: 400px;
+  /* Wider sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+#price-map-legend {
+  /* Keeping the map legend small/hidden if not needed or integrated better */
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: auto;
+  display: none;
+  /* User didn't seem to want this specific legend anymore, or it's redundant with pie */
+}
+
+#price-stats {
+  background: rgba(10, 0, 0, 0.9);
+  /* Darker background */
+  border: 1px solid #ff4d4d;
+  padding: 20px;
+  border-radius: 12px;
+  pointer-events: auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#price-stats h4 {
+  color: #ff4d4d;
+  margin: 0 0 15px 0;
+  border-bottom: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pie-container {
+  width: 100%;
+  height: 250px;
+  /* Much larger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.saved-box {
+  background: rgba(255, 200, 200, 0.1);
+  border-top: 2px solid #ff4d4d;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.saved-box p {
+  color: #ffd1d1 !important;
+  font-size: 1.0rem !important;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.saved-box .question {
+  font-size: 0.8rem !important;
+  color: #aaa !important;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* ===========================
+   CHOROPLETH READ MORE
+   =========================== */
+#choropleth-read-more {
+  position: fixed;
+  bottom: 30px;
+  left: 30px; /* Opposite to legend */
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+#choropleth-read-more button {
+  background: rgba(20, 0, 0, 0.8);
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 10px 20px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#choropleth-read-more button:hover {
+  background: rgba(255, 77, 77, 0.2);
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+}
+
+#choropleth-read-more[style*="opacity: 1"] {
+  pointer-events: auto;
+}
+
+/* ===========================
+   MODAL STYLES
+   =========================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: #0a0202;
+  border: 1px solid #ff4d4d;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 30px rgba(255, 77, 77, 0.2);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #fff;
+}
+
+.modal-content h2 {
+  color: #ff4d4d;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 77, 77, 0.3);
+  padding-bottom: 10px;
+  font-family: "Courier New", monospace;
+}
+
+.modal-body {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+.modal-body ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-body .source {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 1.5rem;
+  font-style: italic;
+}

@@ -1,0 +1,222 @@
+BioGRID Data Analysis
+=====================
+
+Analyzing file: BIOGRID-ORCS-SCREEN_633-2.0.18.screen.tab.txt
+------------------------------
+Shape: (13651, 14)
+
+Columns:
+  - #SCREEN_ID
+  - IDENTIFIER_ID
+  - IDENTIFIER_TYPE
+  - OFFICIAL_SYMBOL
+  - ALIASES
+  - ORGANISM_ID
+  - ORGANISM_OFFICIAL
+  - SCORE.1
+  - SCORE.2
+  - SCORE.3
+  - SCORE.4
+  - SCORE.5
+  - HIT
+  - SOURCE
+
+Data Types:
+#SCREEN_ID             int64
+IDENTIFIER_ID         object
+IDENTIFIER_TYPE       object
+OFFICIAL_SYMBOL       object
+ALIASES               object
+ORGANISM_ID            int64
+ORGANISM_OFFICIAL     object
+SCORE.1              float64
+SCORE.2               object
+SCORE.3               object
+SCORE.4               object
+SCORE.5               object
+HIT                   object
+SOURCE                object
+
+Missing Values:
+#SCREEN_ID           0
+IDENTIFIER_ID        0
+IDENTIFIER_TYPE      0
+OFFICIAL_SYMBOL      1
+ALIASES              0
+ORGANISM_ID          0
+ORGANISM_OFFICIAL    0
+SCORE.1              0
+SCORE.2              0
+SCORE.3              0
+SCORE.4              0
+SCORE.5              0
+HIT                  0
+SOURCE               0
+
+Basic Statistics (Numeric):
+       #SCREEN_ID  ORGANISM_ID       SCORE.1
+count     13651.0      13651.0  13651.000000
+mean        633.0       7227.0     -0.731382
+std           0.0          0.0      3.017623
+min         633.0       7227.0    -39.685000
+25%         633.0       7227.0     -1.588900
+50%         633.0       7227.0     -0.164840
+75%         633.0       7227.0      0.965935
+max         633.0       7227.0     12.839000
+
+First 5 rows:
+   #SCREEN_ID IDENTIFIER_ID IDENTIFIER_TYPE OFFICIAL_SYMBOL                                                                                                        ALIASES  ORGANISM_ID        ORGANISM_OFFICIAL  SCORE.1 SCORE.2 SCORE.3 SCORE.4 SCORE.5  HIT        SOURCE
+0         633         41670     ENTREZ_GENE             B52  B52/SRp55|B52/dSRp55|CG10851|Dmel\CG10851|E(Dfd)|E726|MabB52|RRM8|RSp55|Rbp8|SR55|SRp55|dSRp55|l(3)s2249|rrm8         7227  Drosophila melanogaster  -39.685       -       -       -       -  YES  BioGRID ORCS
+1         633         37849     ENTREZ_GENE           RpL39                                    BcDNA:RH27094|CG3997|Dmel\CG3997|L39|RPl46|Rp46|RpL46|anon-EST:Posey16|rp46         7227  Drosophila melanogaster  -34.982       -       -       -       -  YES  BioGRID ORCS
+2         633         40514     ENTREZ_GENE            Mes2                                                                            CG11100|Dmel\CG11100|MES2|adfR|mes2         7227  Drosophila melanogaster  -31.378       -       -       -       -  YES  BioGRID ORCS
+3         633         44307     ENTREZ_GENE         Vha16-1              ATP6V0C|BcDNA:SD02875|CG3161|Dmel\CG3161|DucC|EP2372|MRE15|V-ATPase|Vha1|Vha16|Vhac|vha16|vha16-1         7227  Drosophila melanogaster  -31.056       -       -       -       -  YES  BioGRID ORCS
+4         633         39108     ENTREZ_GENE            RpS9                           CG3395|Dmel\CG3395|RPS9|Rp S9|RpL11|S9|chr3L:9483841..9483937|chr3L:9484246..9484474         7227  Drosophila melanogaster  -30.496       -       -       -       -  YES  BioGRID ORCS
+
+==================================================
+
+Analyzing file: BIOGRID-ORCS-SCREEN_1866-2.0.18.screen.tab.txt
+------------------------------
+Shape: (5630, 14)
+
+Columns:
+  - #SCREEN_ID
+  - IDENTIFIER_ID
+  - IDENTIFIER_TYPE
+  - OFFICIAL_SYMBOL
+  - ALIASES
+  - ORGANISM_ID
+  - ORGANISM_OFFICIAL
+  - SCORE.1
+  - SCORE.2
+  - SCORE.3
+  - SCORE.4
+  - SCORE.5
+  - HIT
+  - SOURCE
+
+Data Types:
+#SCREEN_ID             int64
+IDENTIFIER_ID          int64
+IDENTIFIER_TYPE       object
+OFFICIAL_SYMBOL       object
+ALIASES               object
+ORGANISM_ID            int64
+ORGANISM_OFFICIAL     object
+SCORE.1              float64
+SCORE.2              float64
+SCORE.3              float64
+SCORE.4               object
+SCORE.5               object
+HIT                   object
+SOURCE                object
+
+Missing Values:
+#SCREEN_ID           0
+IDENTIFIER_ID        0
+IDENTIFIER_TYPE      0
+OFFICIAL_SYMBOL      0
+ALIASES              0
+ORGANISM_ID          0
+ORGANISM_OFFICIAL    0
+SCORE.1              0
+SCORE.2              0
+SCORE.3              0
+SCORE.4              0
+SCORE.5              0
+HIT                  0
+SOURCE               0
+
+Basic Statistics (Numeric):
+       #SCREEN_ID  IDENTIFIER_ID  ORGANISM_ID      SCORE.1      SCORE.2      SCORE.3
+count      5630.0   5.630000e+03       5630.0  5630.000000  5630.000000  5630.000000
+mean       1866.0   8.905891e+05     559292.0     0.404724    -2.127080     0.076792
+std           0.0   4.824253e+05          0.0     0.319523     1.336035     0.111184
+min        1866.0   8.502890e+05     559292.0     0.000005    -7.323800     0.000027
+25%        1866.0   8.520332e+05     559292.0     0.114110    -2.838625     0.003067
+50%        1866.0   8.537360e+05     559292.0     0.335365    -1.878350     0.042732
+75%        1866.0   8.554288e+05     559292.0     0.674800    -1.190600     0.122711
+max        1866.0   2.009814e+07     559292.0     1.000000     4.689300     1.000000
+
+First 5 rows:
+   #SCREEN_ID  IDENTIFIER_ID IDENTIFIER_TYPE OFFICIAL_SYMBOL                                                                  ALIASES  ORGANISM_ID                 ORGANISM_OFFICIAL   SCORE.1  SCORE.2   SCORE.3 SCORE.4 SCORE.5  HIT        SOURCE
+0        1866         853985     ENTREZ_GENE            MED7                       LOC853985|mediator complex subunit MED7|L000003916       559292  Saccharomyces cerevisiae (S288C)  0.000005  -2.0724  0.000027       -       -  YES  BioGRID ORCS
+1        1866         850610     ENTREZ_GENE           YMR31      LOC850610|KGD4|L000002726|mitochondrial 37S ribosomal protein YMR31       559292  Saccharomyces cerevisiae (S288C)  0.000038  -3.3740  0.000027       -       -  YES  BioGRID ORCS
+2        1866         856691     ENTREZ_GENE            GEA2  LOC856691|L000004717|Arf family guanine nucleotide exchange factor GEA2       559292  Saccharomyces cerevisiae (S288C)  0.000066  -1.8143  0.000027       -       -  YES  BioGRID ORCS
+3        1866         853376     ENTREZ_GENE           UTP18                                                                LOC853376       559292  Saccharomyces cerevisiae (S288C)  0.000076  -2.4941  0.000027       -       -  YES  BioGRID ORCS
+4        1866        1466438     ENTREZ_GENE       YDR524C-B                                                               LOC1466438       559292  Saccharomyces cerevisiae (S288C)  0.000092  -1.6329  0.000027       -       -  YES  BioGRID ORCS
+
+==================================================
+
+Analyzing file: BIOGRID-ORCS-SCREEN_1400-2.0.18.screen.tab.txt
+------------------------------
+Shape: (21672, 14)
+
+Columns:
+  - #SCREEN_ID
+  - IDENTIFIER_ID
+  - IDENTIFIER_TYPE
+  - OFFICIAL_SYMBOL
+  - ALIASES
+  - ORGANISM_ID
+  - ORGANISM_OFFICIAL
+  - SCORE.1
+  - SCORE.2
+  - SCORE.3
+  - SCORE.4
+  - SCORE.5
+  - HIT
+  - SOURCE
+
+Data Types:
+#SCREEN_ID             int64
+IDENTIFIER_ID         object
+IDENTIFIER_TYPE       object
+OFFICIAL_SYMBOL       object
+ALIASES               object
+ORGANISM_ID            int64
+ORGANISM_OFFICIAL     object
+SCORE.1              float64
+SCORE.2               object
+SCORE.3               object
+SCORE.4               object
+SCORE.5               object
+HIT                   object
+SOURCE                object
+
+Missing Values:
+#SCREEN_ID           0
+IDENTIFIER_ID        0
+IDENTIFIER_TYPE      0
+OFFICIAL_SYMBOL      0
+ALIASES              0
+ORGANISM_ID          0
+ORGANISM_OFFICIAL    0
+SCORE.1              0
+SCORE.2              0
+SCORE.3              0
+SCORE.4              0
+SCORE.5              0
+HIT                  0
+SOURCE               0
+
+Basic Statistics (Numeric):
+       #SCREEN_ID  ORGANISM_ID       SCORE.1
+count     21672.0      21672.0  21672.000000
+mean       1400.0      60711.0      0.000528
+std           0.0          0.0      1.039716
+min        1400.0      60711.0     -4.618198
+25%        1400.0      60711.0     -0.704804
+50%        1400.0      60711.0     -0.040676
+75%        1400.0      60711.0      0.670826
+max        1400.0      60711.0      8.241457
+
+First 5 rows:
+   #SCREEN_ID IDENTIFIER_ID IDENTIFIER_TYPE OFFICIAL_SYMBOL ALIASES  ORGANISM_ID    ORGANISM_OFFICIAL   SCORE.1 SCORE.2 SCORE.3 SCORE.4 SCORE.5  HIT        SOURCE
+0        1400     103217182     ENTREZ_GENE            DPP4       -        60711  Chlorocebus sabaeus  8.241457       -       -       -       -  YES  BioGRID ORCS
+1        1400     103225216     ENTREZ_GENE           AXIN1       -        60711  Chlorocebus sabaeus  6.491047       -       -       -       -  YES  BioGRID ORCS
+2        1400     103225315     ENTREZ_GENE          ARID1A       -        60711  Chlorocebus sabaeus  6.478354       -       -       -       -  YES  BioGRID ORCS
+3        1400     103218846     ENTREZ_GENE    LOC103218846       -        60711  Chlorocebus sabaeus  6.309148       -       -       -       -  YES  BioGRID ORCS
+4        1400     103219700     ENTREZ_GENE            CTSL       -        60711  Chlorocebus sabaeus  5.811696       -       -       -       -  YES  BioGRID ORCS
+
+==================================================
+

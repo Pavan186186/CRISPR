@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPR: Peril</title>
+    <link rel="stylesheet" href="../css/anti.css">
+    <link rel="stylesheet" href="../css/anti_story.css">
+</head>
+
+<body>
+
+    <canvas id="globe-canvas"></canvas>
+
+    <!-- Loading Screen -->
+    <!-- HOME Button (Top Left, Anti Theme) -->
+    <div id="nav-home" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+        <a href="../index.html" style="text-decoration: none;">
+            <button style="
+        background: rgba(10, 0, 0, 0.8); 
+        color: #ff4d4d; 
+        border: 1px solid #ff4d4d; 
+        padding: 8px 16px; 
+        font-family: 'Courier New', monospace; 
+        font-weight: bold; 
+        cursor: pointer; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;">
+                HOME
+            </button>
+        </a>
+    </div>
+
+    <!-- SWITCH Button (Top Right, Pro Theme) -->
+    <div id="nav-switch" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+        <a href="pro.html" style="text-decoration: none;">
+            <button style="
+        background: rgba(0, 10, 20, 0.8); 
+        color: #2dfaff; 
+        border: 1px solid #2dfaff; 
+        padding: 8px 16px; 
+        font-family: 'Courier New', monospace; 
+        font-weight: bold; 
+        cursor: pointer; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;">
+                SWITCH TO PROMISE
+            </button>
+        </a>
+    </div>
+
+    <div id="loading-overlay">
+        <div id="loading-text">scanning for anomalies...</div>
+        <div id="progress-bar-container">
+            <div id="progress-fill"></div>
+        </div>
+        <div id="scroll-prompt">v scroll to inspect v</div>
+    </div>
+
+    <!-- Final Legend (Hidden by default) -->
+    <div id="choropleth-legend">
+        <h4>COUNTRIES APPROVAL</h4>
+        <div class="gradient-bar"></div>
+        <div class="labels">
+            <span>LOW (0)</span>
+            <span>HIGH (10)</span>
+        </div>
+    </div>
+
+    <!-- Read More Button (Hidden by default) -->
+    <div id="choropleth-read-more">
+        <button>+ READ MORE</button>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="choropleth-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Global Regulatory Landscape</h2>
+            <div class="modal-body">
+                <p>This map visualizes the <strong>regulatory approval status</strong> of CRISPR technologies across
+                    different nations for the Human and Gene drives.</p>
+                <p>The data is normalized on a scale of 0-10:</p>
+                <ul>
+                    <li><strong>High Score (8-10):</strong> Countries with permissive regulations, allowing field trials
+                        and commercial use (e.g., USA, Argentina).</li>
+                    <li><strong>Low Score (0-4):</strong> Countries with restrictive regulations, often classifying
+                        CRISPR as GMOs with heavy bans (e.g., EU, Mexico).</li>
+                </ul>
+                <p class="source">Data Source: Global Gene Editing Regulation Tracker (2023)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Focus Backdrop (like PRO) -->
+    <div id="focus-backdrop"></div>
+
+    <div id="dashboard-grid">
+        <!-- TOP LEFT: Ethical Violations (Radial Bar Chart) -->
+        <div class="widget" id="top-left-widget">
+            <h3>ETHICAL VIOLATIONS</h3>
+            <div id="bar-chart-container"></div>
+        </div>
+
+        <!-- TOP RIGHT: Trial Failures Timeline -->
+        <div class="widget" id="top-right-widget">
+            <h3>TRIAL FAILURES TIMELINE</h3>
+            <div id="timeline-container"></div>
+        </div>
+
+        <!-- BOTTOM CENTER: Boxplot (Off-Target Scores) -->
+        <div class="widget danger-bg" id="bottom-left-widget">
+            <div class="widget-header">
+                <h3>Distribution of Off-Target Scores by Cas9 Type</h3>
+                <p class="subtitle">Box plots of off-target activity scores. Darker tones and red accents emphasise the
+                    "Perils of CRISPR".</p>
+            </div>
+
+            <div id="boxplot-controls">
+                <div class="control-group">
+                    <span class="label">Y-axis scale:</span>
+                    <button data-scale="log" class="active">Log</button>
+                    <button data-scale="linear">Linear</button>
+                </div>
+                <div class="control-group">
+                    <span class="label">Sort by:</span>
+                    <button data-sort="name" class="active">Name</button>
+                    <button data-sort="medianAsc">Median ↑</button>
+                    <button data-sort="medianDesc">Median ↓</button>
+                </div>
+                <div class="control-group info">
+                    <span class="label">Hover for quartiles & medians, click a box to focus, click an outlier to see
+                        details.</span>
+                </div>
+            </div>
+            <svg id="boxplot-svg" width="100%" height="100%"></svg>
+        </div>
+
+        <!-- BOTTOM RIGHT: Regulatory Landscape -->
+        <div class="widget" id="bottom-right-widget">
+            <h3>REGULATORY LANDSCAPE</h3>
+            <div id="regulation-chart-container"></div>
+        </div>
+
+        <!-- BUBBLE WIDGET: Sample Size Problem -->
+        <div class="widget" id="bubble-widget">
+            <h3>THE SAMPLE SIZE PROBLEM</h3>
+
+            <!-- Controls -->
+            <div id="bubble-controls">
+                <button data-phase="all" class="active">ALL</button>
+                <button data-phase="phase1">PHASE 1</button>
+                <button data-phase="phase2">PHASE 2</button>
+                <button data-phase="phase3">PHASE 3</button>
+            </div>
+
+            <!-- Stats Panel - values dynamically loaded from data -->
+            <div id="bubble-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-total">--</span>
+                    <span class="stat-label">TOTAL TRIALS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-median">--</span>
+                    <span class="stat-label">MEDIAN PATIENTS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-under50">--</span>
+                    <span class="stat-label">UNDER 50 PATIENTS</span>
+                </div>
+            </div>
+
+            <!-- Chart Container -->
+            <div id="bubble-chart-container"></div>
+
+            <!-- Comparison Box (hidden by default) -->
+            <div id="comparison-box" class="hidden">
+                <h4>TYPICAL DRUG TRIAL SIZES</h4>
+                <p class="comparison-note">Phase 3 trials usually enroll:</p>
+                <div class="comparison-bubbles">
+                    <div class="comparison-item">1,000 - 3,000 patients</div>
+                </div>
+                <p class="comparison-question">Would you trust a drug tested on 20 people?</p>
+            </div>
+        </div>
+
+        <!-- RADAR WIDGET: Genetic Damage Assessment -->
+        <div class="widget" id="radar-widget">
+            <h3>GENETIC DAMAGE ASSESSMENT</h3>
+            <div id="radar-chart-container"></div>
+        </div>
+
+        <!-- PRICE INEQUALITY WIDGET -->
+        <div class="widget" id="price-inequality-widget">
+            <h3>THE $2.2 MILLION CURE</h3>
+            <div id="price-chart-container"></div>
+            <div id="price-overlay">
+                <!-- Removed map legend as it's less relevant now -->
+                <div id="price-stats">
+                    <h4>Global Sickle Cell Patients</h4>
+
+                    <div class="pie-container"></div>
+
+                    <div class="saved-box">
+                        <p class="question">Who gets saved?</p>
+                        <p>The richest 5%?</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="steps-container">
+
+        <!-- ACT 0: OPENING HOOK (Pure Narrative) -->
+        <div class="step-trigger spacer">
+            <div class="story-card intro-card">
+                <h1>November 2018...</h1>
+                <p>A Chinese scientist stands on a stage.</p>
+                <p class="highlight-text">He's about to shock the world.</p>
+                <br>
+                <p>"Two beautiful Chinese girls named Lulu and Nana came crying into the world as healthy as any other
+                    babies."</p>
+                <p class="danger-text">The first CRISPR-edited human babies.</p>
+                <div class="question-box">
+                    <p>⚠️ UNAUTHORIZED • ⚠️ UNETHICAL • ⚠️ DANGEROUS</p>
+                    <p>He Jiankui: Sentenced to 3 years in prison</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to uncover the truth ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 1: ETHICAL VIOLATIONS RADIAL CHART ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="top-left-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="top-left-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="top-left-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 1: The Scandal</h2>
+                <h3>The Ethics We Ignore</h3>
+                <p>He Jiankui wasn't an anomaly. He was a <strong>symptom</strong>.</p>
+                <div class="stats-box">
+                    <h4>📊 DOCUMENTED VIOLATIONS</h4>
+                    <p>• 45 cases of informed consent issues</p>
+                    <p>• 32 regulatory bypasses</p>
+                    <p>• 28 instances of data concerns</p>
+                    <p>• 15 undisclosed conflicts of interest</p>
+                </div>
+                <p>And these are just the ones we <strong>KNOW</strong> about.</p>
+                <div class="question-box">
+                    <p>🤔 But surely violations are rare exceptions?</p>
+                    <p>Most trials are running smoothly... right?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to see what happens when trials fail ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 2: TRIAL FAILURES TIMELINE ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="top-right-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="top-right-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="top-right-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 2: The Failures</h2>
+                <h3>What They Don't Tell You</h3>
+                <p>They show you the successes. The FDA approvals. The miracle cures.</p>
+                <p>But what about <strong>these</strong>?</p>
+                <div class="stats-box highlight-warning-border">
+                    <h4>📉 THE FAILURE COUNT</h4>
+                    <p>• 🔴 87 trials terminated or withdrawn</p>
+                    <p>• 🟡 22 trials suspended</p>
+                    <p>• ⚪ 34 trials with "unknown" status</p>
+                </div>
+                <p>That's <strong>143 trials</strong> that DIDN'T work out.</p>
+                <div class="question-box">
+                    <p>🤔 When CRISPR fails... what exactly is going wrong?</p>
+                    <p>How precise is this "precise" technology?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to see the precision problem ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 3: BOXPLOT (OFF-TARGET SCORES) ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="bottom-left-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="bottom-left-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="bottom-left-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 3: The Precision Problem</h2>
+                <h3>Off-Target and Dangerous</h3>
+                <p>CRISPR is called "precise." Like molecular scissors.</p>
+                <p>But the data tells a <strong>different story</strong>.</p>
+                <div class="stats-box highlight-critical-border">
+                    <h4>⚠️ WHAT THIS MEANS</h4>
+                    <p>Each box = a Cas9 variant</p>
+                    <p>Higher = more OFF-TARGET cuts</p>
+                    <p>Off-target = CRISPR cut the <strong>WRONG place</strong></p>
+                </div>
+                <p>Some Cas9 variants: <strong>10,000+ off-target cuts</strong></p>
+                <p>That's not "precise." That's shotgun editing.</p>
+                <div class="question-box">
+                    <p>🤔 Thousands of off-target cuts per patient...</p>
+                    <p>But surely they're testing this thoroughly? Large trials?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to discover the sample size scandal ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 4: BUBBLE CHART (SAMPLE SIZE) ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="bubble-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="bubble-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="bubble-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 4: The Sample Size Illusion</h2>
+                <h3>Built on Shaky Ground</h3>
+                <p>"24,226 patients enrolled!" Sounds impressive.</p>
+                <p>Until you see <strong>HOW</strong> they're distributed.</p>
+                <div class="stats-box">
+                    <h4>📊 TRIAL SIZE REALITY</h4>
+                    <p>• Median patients per trial: <strong>20</strong></p>
+                    <p>• Trials with < 50 patients: <strong>68%</strong></p>
+                    <p>• Phase 3 with < 100 patients: <strong>80%</strong></p>
+                </div>
+                <div class="stats-box highlight-warning-border">
+                    <h4>⚠️ COMPARE TO NORMAL</h4>
+                    <p>Standard drug Phase 3: <strong>1,000-3,000</strong> patients</p>
+                    <p>CRISPR Phase 3: <strong>50-100</strong> patients</p>
+                </div>
+                <div class="question-box">
+                    <p>🤔 Can you spot a 1-in-1,000 side effect in a trial of 50?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to see the damage assessment ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 5: RADAR CHART (DAMAGE ASSESSMENT) ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="radar-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="radar-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="radar-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 5: The Genetic Damage Assessment</h2>
+                <h3>A Web of Risks</h3>
+                <p>CRISPR damage isn't just one thing. It's a <strong>constellation of risks</strong>.</p>
+                <div class="stats-box highlight-critical-border">
+                    <h4>🔴 CRITICAL RISKS (80-100)</h4>
+                    <p>• Germline contamination: <strong>90</strong></p>
+                    <p>• Long-term unknowns: <strong>85</strong></p>
+                </div>
+                <div class="stats-box highlight-warning-border">
+                    <h4>🟠 HIGH RISKS (60-79)</h4>
+                    <p>• Off-target mutations: <strong>75</strong></p>
+                    <p>• Immune responses: <strong>68</strong></p>
+                </div>
+                <p>Overall Risk Score: <strong class="danger-text">72/100</strong></p>
+                <div class="question-box">
+                    <p>🤔 Risky technology... but at least it's affordable for everyone?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to see the inequality crisis ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 6: PRICE INEQUALITY ========== -->
+        <!-- Phase 1: Chart appears CENTER -->
+        <div class="step-trigger" data-widget="price-inequality-widget" data-phase="center"></div>
+
+        <!-- Phase 2: Chart moves LEFT -->
+        <div class="step-trigger" data-widget="price-inequality-widget" data-phase="left"></div>
+
+        <!-- Phase 3: Text appears RIGHT -->
+        <div class="step-trigger" data-widget="price-inequality-widget" data-phase="text">
+            <div class="story-card">
+                <h2>ACT 6: The Inequality Crisis</h2>
+                <h3>The $2.2 Million Cure</h3>
+                <p>CASGEVY: The first FDA-approved CRISPR therapy.</p>
+                <p>Price tag: <strong class="danger-text">$2.2 MILLION</strong></p>
+                <div class="stats-box highlight-critical-border">
+                    <h4>💰 WHO CAN AFFORD THIS?</h4>
+                    <p>• Average US household income: $74,580</p>
+                    <p>• Years to save (no expenses): <strong>29 years</strong></p>
+                    <p>• Global reach: <strong>
+                            < 5% of patients</strong>
+                    </p>
+                </div>
+                <p>Sickle cell disease affects <strong>millions</strong> worldwide.</p>
+                <p>Most live in sub-Saharan Africa.</p>
+                <p>Who gets saved? <strong>The richest 5%.</strong></p>
+                <div class="question-box">
+                    <p>🤔 A cure that only serves the wealthy...</p>
+                    <p>Is this really the future we want?</p>
+                </div>
+                <p class="scroll-instruction">↓ Scroll to see the global picture ↓</p>
+            </div>
+        </div>
+
+        <!-- ========== ACT 7: GLOBE (FINALE) ========== -->
+        <div class="step-trigger" data-widget="final-choropleth">
+            <div class="story-card centered-bottom glass-panel">
+                <h2>ACT 7: The Global Risk</h2>
+                <h3>Proceed With Caution</h3>
+                <p>143 failed trials. Thousands of off-target edits. A $2.2M price tag.</p>
+                <p>This isn't a story about what <strong>COULD</strong> go wrong.</p>
+                <p>This is about what <strong>IS</strong> going wrong.</p>
+                <div class="stats-box wide-box highlight-warning-border">
+                    <h4>⚠️ THE CAUTION</h4>
+                    <p>Ethics ignored • Safety rushed • Access denied</p>
+                </div>
+                <p class="highlight-text big-text">The future of humanity shouldn't be in the hands of the few.</p>
+
+                <div class="action-buttons">
+                    <a href="https://clinicaltrials.gov" target="_blank" class="action-btn">LEARN MORE</a>
+                    <a href="pro.html" class="action-btn hope-btn">SEE THE HOPE STORY →</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="tooltip"></div>
+
+    <!-- Libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- App Scripts -->
+    <script src="../js/anti/plot_choropleth.js"></script>
+    <script src="../js/anti/anti_visualizations.js"></script>
+    <script src="../js/anti/bubble_trial_chart.js"></script>
+    <script src="../js/anti/damage_radar_chart.js"></script>
+    <script src="../js/anti/price_inequality.js"></script>
+    <script src="../js/anti/main.js"></script>
+    <script src="../js/anti/boxplot.js"></script>
+
+</body>
+
+</html>
